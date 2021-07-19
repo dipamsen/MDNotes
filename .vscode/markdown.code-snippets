@@ -1,0 +1,16 @@
+{
+  "h+": {
+    "prefix": "h+",
+    "body": [
+      "$\\ce{H+}$"
+    ],
+    "description": "H+ Ion"
+  },
+  "chem": {
+    "prefix": "chem",
+    "body": [
+      "$\\ce{$0}$"
+    ],
+    "description": "Chemical LaTeX"
+  }
+}

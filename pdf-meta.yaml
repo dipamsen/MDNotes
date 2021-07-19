@@ -1,0 +1,8 @@
+---
+geometry:
+- margin=1in
+fontsize: 12pt
+header-includes: |
+            \usepackage{mhchem}
+            \newcommand{\ud}[2]{\underset{\text{#2}}{\ce{#1}}}
+...

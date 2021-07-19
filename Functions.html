@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Document</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+   var mathElements = document.getElementsByClassName("math");
+   var macros = [];
+   for (var i = 0; i < mathElements.length; i++) {
+    var texText = mathElements[i].firstChild;
+    if (mathElements[i].tagName == "SPAN") {
+     katex.render(texText.data, mathElements[i], {
+      displayMode: mathElements[i].classList.contains('display'),
+      throwOnError: false,
+      macros: macros,
+      fleqn: false
+     });
+  }}});
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script>katex.__defineMacro("\\ud", "\\underset{\\text{#2}}{\\ce{#1}}")</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Document</h1>
+</header>
+<h1 id="relations-and-functions">Relations and Functions</h1>
+<h2 id="relations">Relations</h2>
+<ul>
+<li>Relations are a subset of the <strong>cardinal product of two sets.</strong></li>
+</ul>
+<p>A relation between set <span class="math inline">A</span> and <span class="math inline">B</span> can be denoted as: <span class="math display">R_{AB} \subseteq \{(x, y) : x \in A, y \in B\}</span></p>
+<h2 id="functions">Functions</h2>
+<ul>
+<li><p>Functions are Relations of whom:</p>
+<ul>
+<li>Every element of first set should have an image in second set.</li>
+<li>No <span class="math inline">x \in A</span> can have more than one image in <span class="math inline">B</span></li>
+</ul></li>
+</ul>
+<h2 id="types-of-relations">Types of Relations</h2>
+<ol type="1">
+<li>Void Relation</li>
+</ol>
+<p>Let <span class="math inline">A</span> be a set. Then <span class="math inline">\phi \subseteq A \times A</span> , so it is a relation on <span class="math inline">A</span>.</p>
+<ol start="2" type="1">
+<li>Universal Relation</li>
+</ol>
+<p>Let <span class="math inline">A</span> be a set. Then <span class="math inline">A \times A \subseteq A \times A</span></p>
+<ol start="3" type="1">
+<li>Identity Relation</li>
+</ol>
+<p>Let <span class="math inline">A</span> be a set. Then the Relation <span class="math inline">I_A = \{(a,a) : a \in A\}</span></p>
+<ol start="4" type="1">
+<li>Reflexive Relation</li>
+</ol>
+<p>A relation <span class="math inline">R</span> on a set <span class="math inline">A</span> is said to be reflexive if every element of <span class="math inline">A</span> is related to itself. The R is reflexive <span class="math inline">\Leftrightarrow (a, a) \in R</span> for all <span class="math inline">a \in A</span></p>
+<blockquote>
+<p>Eg: <span class="math display">A = \{1, 2, 3\}</span></p>
+<p><span class="math display">R_1=\{(1, 1), (2, 2), (3, 3), (1, 3),(1, 2)\}</span></p>
+<p><span class="math inline">R_1</span> is reflexive.</p>
+<p><span class="math display">R_2=\{(1, 1), (2, 2)\}</span></p>
+<p><span class="math inline">R_2</span> is not reflexive.</p>
+</blockquote>
+<hr />
+<ul>
+<li>Symmetric Relations</li>
+</ul>
+<p>A relation <span class="math inline">R</span> on a set <span class="math inline">A</span> is symmetric iff: <span class="math display"> (a, b) \in R \implies (b, a) \in R</span> for all <span class="math inline">a, b \in A</span></p>
+<ul>
+<li>Transitive Relations</li>
+</ul>
+<p>A relation <span class="math inline">R</span> on a set <span class="math inline">A</span> is transitive iff: <span class="math display">(a, b) \in R \; \land (b, c) \in R \implies (a, c) \in R</span> for all <span class="math inline">a, b, c \in A</span></p>
+<p>Notes:</p>
+<ul>
+<li><span class="math inline">R_1</span> is Symmetric and Transitive <span class="math inline">\implies R_1</span> is Reflexive.</li>
+</ul>
+<hr />
+<ul>
+<li>Equivalence relation:</li>
+</ul>
+<p>Iff:</p>
+<ul>
+<li>it is reflexive (<span class="math inline">(a, a)</span> is present for all <span class="math inline">a</span>)</li>
+<li>it is symmetric (<span class="math inline">(a, b)</span> implies <span class="math inline">(b, a)</span>)</li>
+<li>it is transitive (<span class="math inline">(a, b)</span> and <span class="math inline">(b, c)</span> implies <span class="math inline">(a, c)</span>)</li>
+</ul>
+<!-- Triangle Similarity Example -->
+</body>
+</html>
