@@ -4,8 +4,11 @@
 
 Acids furnish $\ce{H+}$ ions or $\ce{H3O+}$ ions when dissolved in water. Acids have one or more replaceable $\ce{H}$ atoms
 
-<details >
-<summary>Arrhenius Concept of Acids</summary>
+<details><summary>
+
+**Arrhenius Concept of Acids**
+
+</summary>
   
 ---
 
@@ -53,6 +56,7 @@ $$\ce{HA(aq) + H2O -> H3O+(aq) A-(aq)}$$
     Eg: $\ce{HCl}$ (Hydrochloric Acid), $\ce{HNO3}$ (Nitric Acid), $\ce{H2SO4}$ (Sulphuric Acid)
 
 - **Based on their Basicity**
+
   Basicity = The number of $\ce{H}$ atoms replaceable by a base in a particular acid.
 
   - **Monabasic Acid** gives one $\ce{H+}$ ion per molecule of the acid in solution.
