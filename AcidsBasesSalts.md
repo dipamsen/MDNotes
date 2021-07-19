@@ -12,7 +12,6 @@ Acids furnish $\ce{H+}$ ions or $\ce{H3O+}$ ions when dissolved in water. Acids 
 
 </summary>
 
-
 Acid is capable of producing hydrogen ion $\ce{H+}$ by dissociating in aqueous solution. This reaction can be represented by
 
 $$\ce{\ud{HA(aq)}{Acid} -> \ud{H+(aq)}{Hydrogen Ion (proton)} \ud{A-(aq)}{}}$$
@@ -85,3 +84,5 @@ $$\ce{HA(aq) + H2O -> H3O+(aq) A-(aq)}$$
 * **Based on Concentration**
   - **Concentrated Acid** has a relatively high percentage of acid in its aqueous solution.
   - **Dilute Acid** has a relatively low percentage of acid in its aqueous solution.
+
+Created by _Dipam Sen_
