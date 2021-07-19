@@ -5,4 +5,6 @@ fontsize: 12pt
 header-includes: |
             \usepackage{mhchem}
             \newcommand{\ud}[2]{\underset{\text{#2}}{\ce{#1}}}
+            \let\OldRule\rule
+            \renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
 ...

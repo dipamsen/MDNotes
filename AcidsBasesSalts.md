@@ -4,13 +4,14 @@
 
 Acids furnish $\ce{H+}$ ions or $\ce{H3O+}$ ions when dissolved in water. Acids have one or more replaceable $\ce{H}$ atoms
 
+---
+
 <details><summary>
 
 **Arrhenius Concept of Acids**
 
 </summary>
-  
----
+
 
 Acid is capable of producing hydrogen ion $\ce{H+}$ by dissociating in aqueous solution. This reaction can be represented by
 
@@ -30,9 +31,9 @@ The first equation can be rewritten as
 
 $$\ce{HA(aq) + H2O -> H3O+(aq) A-(aq)}$$
 
----
-
 </details>
+
+---
 
 <br>
 
