@@ -10,5 +10,8 @@
   "spellright.documentTypes": [
     "latex",
     "plaintext"
-  ]
+  ],
+  "markdown.extension.katex.macros": {
+    "\\ud": "\\underset{\\text{#2}}{\\ce{#1}}"
+  },
 }
