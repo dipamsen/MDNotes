@@ -10,7 +10,7 @@ const exec = util.promisify(require("child_process").exec);
   const mdFile = process.argv[process.argv.length - 1];
   const filename = mdFile.split(".")[0];
   const htmlCmd = `pandoc -o ${filename}.html ${filename}.md --metadata-file html-meta.yaml --katex -s`;
-  const pdfCmd = `pandoc -o ${filename}.pdf ${filename}.md --metadata-file pdf-meta.yaml  -s`;
+  const pdfCmd = `pandoc -o ${filename}.pdf ${filename}.md --metadata-file pdf-meta.yaml -s`;
 
   console.log("Converting to HTML. (Using KaTeX)");
   const htmlP = await exec(htmlCmd);

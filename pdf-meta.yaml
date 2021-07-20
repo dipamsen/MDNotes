@@ -3,8 +3,11 @@ geometry:
 - margin=1in
 fontsize: 12pt
 header-includes: |
-            \usepackage{mhchem}
-            \newcommand{\ud}[2]{\underset{\text{#2}}{\ce{#1}}}
-            \let\OldRule\rule
-            \renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+  \usepackage{mhchem}
+  \usepackage{tcolorbox}
+  \newtcolorbox{myquote}{colback=gray!25, colframe=gray!75!black}
+  \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
+  \newcommand{\ud}[2]{\underset{\text{#2}}{\ce{#1}}}
+  \let\OldRule\rule
+  \renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
 ...
