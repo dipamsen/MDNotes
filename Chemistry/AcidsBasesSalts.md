@@ -54,6 +54,8 @@ On the basis of extent of dissociation of acids, they are classified as Strong a
 
   $$\ud{HF(aq) <=> H+(aq) + F-(aq)}{Hydrofluoric Acid dissociates partially in water.}$$
 
+  $$\ud{CH3COOH -> CH3COO- + H+}{Acetic acid is an organic acid and a weak acid.}$$
+
 - The double arrows indicate that:
 
   - The aqueous solution of hydrofluoric acid not only contains $\ce{H+}$ and $\ce{F-}$ ions, but also the undissociated acid $\ce{HF}$.
@@ -65,9 +67,11 @@ On the basis of extent of dissociation of acids, they are classified as Strong a
   - $\ce{HCN}$ - Hydrocynic acid
   - $\ce{C6H5COOH}$ - Benzoic acid
 
-> All hydrogen containing compounds are not acids.
+> - All hydrogen containing compounds are not acids.
 >
-> Although Ethyl alcohol $(\ce{C2H5OH})$ and glucose $(\ce{C6H12O6})$ contain hydrogen, they do not produce $\ce{H+}$ ions on dissolving in water. Their solutions are not acidic.
+>   Although Ethyl alcohol $(\ce{C2H5OH})$ and glucose $(\ce{C6H12O6})$ contain hydrogen, they do not produce $\ce{H+}$ ions on dissolving in water. Their solutions are not acidic.
+>
+> - Although acetic acid being an organic acid is a weak acid, but concentrated acetic acid is corrosive and can damage the skin if poured over it.
 
 ### 1.2 Classification of Acids
 
@@ -166,7 +170,7 @@ On the basis of extent of dissociation of acids, they are classified as Strong a
 
 - **Reaction of acids with Metallic oxides**
 
-  Metal oxides are basic in nature. Thus, when an acid reacts with a metal oxide, both neutralize each other. In this reaction, respective salt and water is formed.
+  Metal oxides are basic in nature. Thus, when an acid reacts with a metal oxide, both neutralise each other. In this reaction, respective salt and water is formed.
 
   $\ce{Acid + Metal Oxide -> Salt + Water}$
 
@@ -222,7 +226,8 @@ On the basis of the extent of dissociation occuring in their solution, bases are
 - **Weak Bases** do not furnish $\ce{OH-}$ ions by dissociation. They react with water to furnish $\ce{OH-}$ ions.
 
   Eg: Ammonia
-  $$\ce{NH3(g) + H2O(l) -> NH4OH}\\{}\\\ce{NH4OH(aq) <=> NH4+ + OH-}$$
+  $$\ce{NH3(g) + H2O(l) -> NH4OH}$$
+  $$\ce{NH4OH(aq) <=> NH4+ + OH-}$$
 
 - The reaction resulting in the formation of $\ce{OH-}$ ions does not go to completion and the solution contains relatively low concentration of $\ce{OH-}$ ions.
 - The double sided arrows indicate that equilibrium is reached before the reaction is completed.
@@ -271,16 +276,77 @@ On the basis of the extent of dissociation occuring in their solution, bases are
 
   Non metallic oxides are acidic in nature. For example, $\ce{CO2}$ dissolved in water gives carbonic acid.
 
-  When a base reacts with a non-metal oxide, both neutralize each other resulting in production of respective salt and water.
+  When a base reacts with a non-metal oxide, both neutralise each other resulting in production of respective salt and water.
 
   $\ce{Base + {Non-Metal} Oxide -> Salt + Water}$
 
   - $\ce{Ca(OH)2 + CO2 -> CaCO3 + H2O}$
   - $\ce{2NaOH + CO2 -> Na2CO3 + H2O}$
 
-## 3 Neutralization
+## 3 Indicators
 
-An acid neutralizes a base when they react with each other, and respective salt and water is formed.
+Substances which show the acidic or basic behaviour of other substances by change are indicators.
+
+**Types of Indicators**:
+
+- Natural Indicators
+- Synthetic Indicators
+- Olfactory Indicators
+- Universal Indicator
+
+### Natural Indicators:
+
+Indicators obtained from natural sources are natural indicators. Eg: Litmus, Turmeric, Red Cabbage, China Rose
+
+- **Litmus**
+
+  Litmus is obtained from Lichens. The solution of litmus is purple in colour. Litmus paper comes in red and blue colors.
+
+  Acids turns blue litmus paper red and bases turn red litmus paper blue.
+
+- **Turmeric**
+
+  Turmeric is yellow in colour. Turmeric solution or paper turns reddish brown with base.
+
+- **Red Cabbage**
+
+  The juice of red cabbage is purple in colour. It turns reddish with acids and greenish with bases.
+
+### Olfactory Indicators
+
+Substances which change their smell when mixed with acid or base are olfactory indicators.
+
+- **Onion**
+
+  Paste or juice of onion loses its smell when added with base.
+
+- **Vanilla**
+
+  The smell of vanilla vanishes with base, but its smell does not vanish with acid.
+
+### Synthetic Indicators
+
+Indicators that are synthesized in laboratory are synthetic indicators.
+
+**Phenolphthalein** is a colourless liquid. It turns pink with a base.
+
+**Methyl Orange** is originally orange in colour. It turns red with acid and yellow with base.
+
+## 4 Dilution and Neutralizarion
+
+### Dilution of Acids and Bases
+
+The concentration of hydrogen ion in an acid and hydroxide ion in a base, per unit volume, shows the concentration of an acid or base.
+
+By mixing acid to water, the concentration of $\ce{H+}$ per unit volume decreases. Similarly, by addition of base to water, the concentration of $\ce{OH-}$ per unit volume decreases. **The process of adding acid or base to water in order to decrease its concentration is called dilution.**
+
+> The dilution of acids and bases is **exothermic**. Thus acid/base is always added to water, and not the _vice versa_.
+>
+> If water is added to a concentrated acid or base, a lot of heat is generated, which may cause **splashing out of acids and bases** and may cause severe damage as concentrated acid and base are highly corrosive.
+
+### Neutralisation Reaction
+
+An acid neutralises a base when they react with each other, and respective salt and water is formed.
 
 $$\ce{Acid + Base -> Salt + Water}$$
 
@@ -288,7 +354,50 @@ $$\ud{H2SO4 + 2NaOH -> Na2SO4 + 2H2O}{}$$
 
 > When an acid reacts with a base, the **hydrogen ion $(\ce{H+})$** of the acid combines with the **hydroxide ion $(\ce{OH-})$** of the base and forms water.
 >
-> As these ions combine together and form water, instead of remaining free, thus both neutralize each other.
+> As these ions combine together and form water, instead of remaining free, thus both neutralise each other.
+
+**Creation of Salt**: Salts can be of three types: Neutral, Acidic or Basic.
+
+|  Acid  |  Base  |  Salt   |
+| :----: | :----: | :-----: |
+| Strong | Strong | Neutral |
+| Strong |  Weak  | Acidic  |
+|  Weak  | Strong |  Basic  |
+|  Weak  |  Weak  |   NA    |
+
+## 5 Strength of Acid and Base
+
+Acid-Base indicators canbe used to distinguish between an acid and a base.
+
+The classification of Acids and Bases ad **Strong and Weak** can be done by checking the extent of ionisation of the acid/base.
+
+A scale for measuring hydrogen ion concentration in a solution, called **pH Scale** has been developed.
+
+The **pH** value of a solution represents the concentration of $\ce{H+(aq)}$ ions in the solution, in a logarithmic scale.
+
+$$\text{pH} = \log{\frac{1}{\left[\ce{H+}\right]}}$$
+Or
+$$\text{pH} = -\log{\left[\ce{H+}\right]}$$
+
+Here, $\left[\ce{H+}\right]$ denotes the **molar concentration of $\ce{H+(aq)}$ ions**.
+
+For example, in neutral solutions,
+
+$$
+\underset{\text{Conc. of $\ce{H+}$ ions in pure water is $10^{-7}$ moles per liter.}}{\left[\ce{H+}\right] = 1.0 \times 10^{-7} \ \text{mol}   \ \text{L}^{-1}}
+$$
+
+Because of the negative sign in the expression $-\log{\left[\ce{H+}\right]}$, **as the $\ce{H+}$ conc. increases, $\text{pH}$ decreases**, and vice verca.
+
+The $\text{pH}$ value of a neutral solution is:
+
+$$
+\begin{aligned}
+\text{pH} &= -\log_{10}\left({10^{-7}}\right) \\
+&= -(-7) \\
+&= 7
+\end{aligned}
+$$
 
 ---
 

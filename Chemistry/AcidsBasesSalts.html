@@ -8,7 +8,7 @@
   <style>
     html {
       line-height: 1.5;
-      font-family: Georgia, serif;
+      font-family: KaTeX_Main;
       font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
@@ -16,10 +16,10 @@
     body {
       margin: 0 auto;
       max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-left: 5mm;
+      padding-right: 5mm;
+      padding-top: 20mm;
+      padding-bottom: 20mm;
       hyphens: auto;
       word-wrap: break-word;
       text-rendering: optimizeLegibility;
@@ -164,6 +164,24 @@
   <![endif]-->
   <script>katex.__defineMacro("\\ud", "\\underset{\\text{#2}}{\\ce{#1}}")</script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+  <style>
+    blockquote {
+      margin: 1em;
+      padding: 0.5em 20px;
+      border: 5px solid darkgrey;
+      border-radius: 20px;
+      background-color: #eee; 
+      color: inherit;
+    }
+    table {
+      margin: 0 auto;
+      width: initial;
+      display: table;
+    }
+    th, td {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body>
 <h1 id="acids-bases-and-salts">Acids, Bases and Salts</h1>
@@ -208,7 +226,8 @@
 <li><p>The Acids which dissociate partially in water are <strong>weak acids</strong>.</p></li>
 <li><p>All organic acids are weak.</p></li>
 <li><p>Since their dissociation is only partial, itis denoted be a reversible reaction.</p>
-<p><span class="math display">\ud{HF(aq) &lt;=&gt; H+(aq) + F-(aq)}{Hydrofluoric Acid dissociates partially in water.}</span></p></li>
+<p><span class="math display">\ud{HF(aq) &lt;=&gt; H+(aq) + F-(aq)}{Hydrofluoric Acid dissociates partially in water.}</span></p>
+<p><span class="math display">\ud{CH3COOH -&gt; CH3COO- + H+}{Acetic acid is an organic acid and a weak acid.}</span></p></li>
 <li><p>The double arrows indicate that:</p>
 <ul>
 <li>The aqueous solution of hydrofluoric acid not only contains <span class="math inline">\ce{H+}</span> and <span class="math inline">\ce{F-}</span> ions, but also the undissociated acid <span class="math inline">\ce{HF}</span>.</li>
@@ -223,8 +242,11 @@
 </ul></li>
 </ul>
 <blockquote>
-<p>All hydrogen containing compounds are not acids.</p>
-<p>Although Ethyl alcohol <span class="math inline">(\ce{C2H5OH})</span> and glucose <span class="math inline">(\ce{C6H12O6})</span> contain hydrogen, they do not produce <span class="math inline">\ce{H+}</span> ions on dissolving in water. Their solutions are not acidic.</p>
+<ul>
+<li><p>All hydrogen containing compounds are not acids.</p>
+<p>Although Ethyl alcohol <span class="math inline">(\ce{C2H5OH})</span> and glucose <span class="math inline">(\ce{C6H12O6})</span> contain hydrogen, they do not produce <span class="math inline">\ce{H+}</span> ions on dissolving in water. Their solutions are not acidic.</p></li>
+<li><p>Although acetic acid being an organic acid is a weak acid, but concentrated acetic acid is corrosive and can damage the skin if poured over it.</p></li>
+</ul>
 </blockquote>
 <h3 id="classification-of-acids">1.2 Classification of Acids</h3>
 <ul>
@@ -308,7 +330,7 @@
 </blockquote>
 <ul>
 <li><p><strong>Reaction of acids with Metallic oxides</strong></p>
-<p>Metal oxides are basic in nature. Thus, when an acid reacts with a metal oxide, both neutralize each other. In this reaction, respective salt and water is formed.</p>
+<p>Metal oxides are basic in nature. Thus, when an acid reacts with a metal oxide, both neutralise each other. In this reaction, respective salt and water is formed.</p>
 <p><span class="math inline">\ce{Acid + Metal Oxide -&gt; Salt + Water}</span></p>
 <p>Examples:</p>
 <ul>
@@ -351,7 +373,7 @@
 <li><span class="math inline">\ce{Ba(OH)2}</span> - Barium Hydroxide</li>
 </ul></li>
 <li><p><strong>Weak Bases</strong> do not furnish <span class="math inline">\ce{OH-}</span> ions by dissociation. They react with water to furnish <span class="math inline">\ce{OH-}</span> ions.</p>
-<p>Eg: Ammonia <span class="math display">\ce{NH3(g) + H2O(l) -&gt; NH4OH}\\{}\\\ce{NH4OH(aq) &lt;=&gt; NH4+ + OH-}</span></p></li>
+<p>Eg: Ammonia <span class="math display">\ce{NH3(g) + H2O(l) -&gt; NH4OH}</span> <span class="math display">\ce{NH4OH(aq) &lt;=&gt; NH4+ + OH-}</span></p></li>
 <li><p>The reaction resulting in the formation of <span class="math inline">\ce{OH-}</span> ions does not go to completion and the solution contains relatively low concentration of <span class="math inline">\ce{OH-}</span> ions.</p></li>
 <li><p>The double sided arrows indicate that equilibrium is reached before the reaction is completed.</p></li>
 <li><p>Examples of Weak Bases are</p>
@@ -391,21 +413,113 @@
 <p>Such reactions are not possible with all metals.</p></li>
 <li><p><strong>Reaction of Base with Non Metallic Oxides</strong></p>
 <p>Non metallic oxides are acidic in nature. For example, <span class="math inline">\ce{CO2}</span> dissolved in water gives carbonic acid.</p>
-<p>When a base reacts with a non-metal oxide, both neutralize each other resulting in production of respective salt and water.</p>
+<p>When a base reacts with a non-metal oxide, both neutralise each other resulting in production of respective salt and water.</p>
 <p><span class="math inline">\ce{Base + {Non-Metal} Oxide -&gt; Salt + Water}</span></p>
 <ul>
 <li><span class="math inline">\ce{Ca(OH)2 + CO2 -&gt; CaCO3 + H2O}</span></li>
 <li><span class="math inline">\ce{2NaOH + CO2 -&gt; Na2CO3 + H2O}</span></li>
 </ul></li>
 </ul>
-<h2 id="neutralization">3 Neutralization</h2>
-<p>An acid neutralizes a base when they react with each other, and respective salt and water is formed.</p>
+<h2 id="indicators">3 Indicators</h2>
+<p>Substances which show the acidic or basic behaviour of other substances by change are indicators.</p>
+<p><strong>Types of Indicators</strong>:</p>
+<ul>
+<li>Natural Indicators</li>
+<li>Synthetic Indicators</li>
+<li>Olfactory Indicators</li>
+<li>Universal Indicator</li>
+</ul>
+<h3 id="natural-indicators">Natural Indicators:</h3>
+<p>Indicators obtained from natural sources are natural indicators. Eg: Litmus, Turmeric, Red Cabbage, China Rose</p>
+<ul>
+<li><p><strong>Litmus</strong></p>
+<p>Litmus is obtained from Lichens. The solution of litmus is purple in colour. Litmus paper comes in red and blue colors.</p>
+<p>Acids turns blue litmus paper red and bases turn red litmus paper blue.</p></li>
+<li><p><strong>Turmeric</strong></p>
+<p>Turmeric is yellow in colour. Turmeric solution or paper turns reddish brown with base.</p></li>
+<li><p><strong>Red Cabbage</strong></p>
+<p>The juice of red cabbage is purple in colour. It turns reddish with acids and greenish with bases.</p></li>
+</ul>
+<h3 id="olfactory-indicators">Olfactory Indicators</h3>
+<p>Substances which change their smell when mixed with acid or base are olfactory indicators.</p>
+<ul>
+<li><p><strong>Onion</strong></p>
+<p>Paste or juice of onion loses its smell when added with base.</p></li>
+<li><p><strong>Vanilla</strong></p>
+<p>The smell of vanilla vanishes with base, but its smell does not vanish with acid.</p></li>
+</ul>
+<h3 id="synthetic-indicators">Synthetic Indicators</h3>
+<p>Indicators that are synthesized in laboratory are synthetic indicators.</p>
+<p><strong>Phenolphthalein</strong> is a colourless liquid. It turns pink with a base.</p>
+<p><strong>Methyl Orange</strong> is originally orange in colour. It turns red with acid and yellow with base.</p>
+<h2 id="dilution-and-neutralizarion">4 Dilution and Neutralizarion</h2>
+<h3 id="dilution-of-acids-and-bases">Dilution of Acids and Bases</h3>
+<p>The concentration of hydrogen ion in an acid and hydroxide ion in a base, per unit volume, shows the concentration of an acid or base.</p>
+<p>By mixing acid to water, the concentration of <span class="math inline">\ce{H+}</span> per unit volume decreases. Similarly, by addition of base to water, the concentration of <span class="math inline">\ce{OH-}</span> per unit volume decreases. <strong>The process of adding acid or base to water in order to decrease its concentration is called dilution.</strong></p>
+<blockquote>
+<p>The dilution of acids and bases is <strong>exothermic</strong>. Thus acid/base is always added to water, and not the <em>vice versa</em>.</p>
+<p>If water is added to a concentrated acid or base, a lot of heat is generated, which may cause <strong>splashing out of acids and bases</strong> and may cause severe damage as concentrated acid and base are highly corrosive.</p>
+</blockquote>
+<h3 id="neutralisation-reaction">Neutralisation Reaction</h3>
+<p>An acid neutralises a base when they react with each other, and respective salt and water is formed.</p>
 <p><span class="math display">\ce{Acid + Base -&gt; Salt + Water}</span></p>
 <p><span class="math display">\ud{H2SO4 + 2NaOH -&gt; Na2SO4 + 2H2O}{}</span></p>
 <blockquote>
 <p>When an acid reacts with a base, the <strong>hydrogen ion <span class="math inline">(\ce{H+})</span></strong> of the acid combines with the <strong>hydroxide ion <span class="math inline">(\ce{OH-})</span></strong> of the base and forms water.</p>
-<p>As these ions combine together and form water, instead of remaining free, thus both neutralize each other.</p>
+<p>As these ions combine together and form water, instead of remaining free, thus both neutralise each other.</p>
 </blockquote>
+<p><strong>Creation of Salt</strong>: Salts can be of three types: Neutral, Acidic or Basic.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Acid</th>
+<th style="text-align: center;">Base</th>
+<th style="text-align: center;">Salt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Strong</td>
+<td style="text-align: center;">Strong</td>
+<td style="text-align: center;">Neutral</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Strong</td>
+<td style="text-align: center;">Weak</td>
+<td style="text-align: center;">Acidic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Weak</td>
+<td style="text-align: center;">Strong</td>
+<td style="text-align: center;">Basic</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Weak</td>
+<td style="text-align: center;">Weak</td>
+<td style="text-align: center;">NA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="strength-of-acid-and-base">5 Strength of Acid and Base</h2>
+<p>Acid-Base indicators canbe used to distinguish between an acid and a base.</p>
+<p>The classification of Acids and Bases ad <strong>Strong and Weak</strong> can be done by checking the extent of ionisation of the acid/base.</p>
+<p>A scale for measuring hydrogen ion concentration in a solution, called <strong>pH Scale</strong> has been developed.</p>
+<p>The <strong>pH</strong> value of a solution represents the concentration of <span class="math inline">\ce{H+(aq)}</span> ions in the solution, in a logarithmic scale.</p>
+<p><span class="math display">\text{pH} = \log{\frac{1}{\left[\ce{H+}\right]}}</span> Or <span class="math display">\text{pH} = -\log{\left[\ce{H+}\right]}</span></p>
+<p>Here, <span class="math inline">\left[\ce{H+}\right]</span> denotes the <strong>molar concentration of <span class="math inline">\ce{H+(aq)}</span> ions</strong>.</p>
+<p>For example, in neutral solutions,</p>
+<p><span class="math display">
+\underset{\text{Conc. of $\ce{H+}$ ions in pure water is $10^{-7}$ moles per liter.}}{\left[\ce{H+}\right] = 1.0 \times 10^{-7} \ \text{mol}   \ \text{L}^{-1}}
+</span></p>
+<p>Because of the negative sign in the expression <span class="math inline">-\log{\left[\ce{H+}\right]}</span>, <strong>as the <span class="math inline">\ce{H+}</span> conc. increases, <span class="math inline">\text{pH}</span> decreases</strong>, and vice verca.</p>
+<p>The <span class="math inline">\text{pH}</span> value of a neutral solution is:</p>
+<p><span class="math display">
+\begin{aligned}
+\text{pH} &amp;= -\log_{10}\left({10^{-7}}\right) \\
+&amp;= -(-7) \\
+&amp;= 7
+\end{aligned}
+</span></p>
 <hr />
 <p>Created by <em>Dipam Sen</em></p>
 <h2 id="references">References</h2>

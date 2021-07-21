@@ -2,4 +2,27 @@
 header-includes: |
   <script>katex.__defineMacro("\\ud", "\\underset{\\text{#2}}{\\ce{#1}}")</script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+  <style>
+    blockquote {
+      margin: 1em;
+      padding: 0.5em 20px;
+      border: 5px solid darkgrey;
+      border-radius: 20px;
+      background-color: #eee; 
+      color: inherit;
+    }
+    table {
+      margin: 0 auto;
+      width: initial;
+      display: table;
+    }
+    th, td {
+      border: 1px solid black;
+    }
+  </style>
+mainfont: KaTeX_Main
+margin-left: 5mm
+margin-right: 5mm
+margin-top: 20mm
+margin-bottom: 20mm
 ...
