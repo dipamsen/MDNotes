@@ -10,8 +10,8 @@ const exec = util.promisify(require("child_process").exec);
   const mdFile = process.argv[process.argv.length - 1];
   const filename = mdFile.split(".")[0];
   const htmlCmd = `pandoc -o ${filename}.html ${filename}.md --metadata-file html-meta.yaml --katex -s`;
-  const pdfCmd = `pandoc -o ${filename}.pdf ${filename}.md --metadata-file pdf-meta.yaml -s --shift-heading-level-by -1 --template templates/default.latex`;
-
+  const pdfCmd = `pandoc -o ${filename}.pdf ${filename}.md --metadata-file html-meta.yaml --katex -t html --variable header-html=Hi`;
+//  --metadata-file html-meta.yaml -s -t html --katex
   console.log("Converting to HTML. (Using KaTeX)");
   const htmlP = await exec(htmlCmd);
   console.log(htmlP.stdout);
@@ -20,17 +20,9 @@ const exec = util.promisify(require("child_process").exec);
 
   console.log("");
 
-  console.log("Converting to PDF. (Using PDFLaTeX)");
+  console.log("Converting to PDF. (Using HTML2PDF)");
   const pdfP = await exec(pdfCmd);
   console.log(pdfP.stdout);
   console.error(pdfP.stderr);
   console.log("Done with PDF.");
-
-  console.log("");
-
-  // console.log("Converting to TeX. (Using PDFLaTeX)");
-  // const texP = await exec(texCmd);
-  // console.log(texP.stdout);
-  // console.error(texP.stderr);
-  // console.log("Done with TeX.");
 })();

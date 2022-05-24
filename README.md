@@ -6,6 +6,17 @@ This repo uses [VSCode-renderable Markdown](https://code.visualstudio.com/docs/l
 
 [Pandoc](https://pandoc.org/) is used to convert [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) into HTML and PDF versions.
 
+
+## Usage
+
+1. Install Pandoc (from [here](https://pandoc.org/installing.html))
+2. Install `wkhtmltopdf` (from [here](https://wkhtmltopdf.org/downloads.html))
+2. Write any markdown file `yourname.md`. 
+3. Run `node . yourname.md` to generate html and pdf versions of the file.
+
+
+
+
 ### Creation of PDF
 
 By default, Pandoc uses [LaTeX](https://www.latex-project.org/) for generating PDFs.
