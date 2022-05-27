@@ -204,9 +204,222 @@
 <p>The following are some examples of valid sets. <span
 class="math display">N=\{1,2,3,4,5,\cdots\}</span> <span
 class="math display">V=\{A, E, I, O, U\}</span> <span
-class="math display">A=\text{set of all students in a class}</span></p>
+class="math display">A=\text{\{all students in a class\}}</span></p>
 <p>The following examples are not well defined, thus they cannot be
-called sets. <span class="math display">\text{Eg: set of the most
-toughest chapters in JEE Mains}</span></p>
+called sets. <span class="math display">\text{F = \{toughest chapters in
+JEE Mains\}}</span></p>
+<h2 id="representation-of-a-set">Representation of a Set</h2>
+<p>A Set can be represented in two forms:</p>
+<ol type="1">
+<li><strong>Roster form:</strong> All the elements are listed in curly
+brackets ({ }). Multiple elements can be shown using <span
+class="math inline">\cdots</span>.</li>
+</ol>
+<p><span class="math display">A=\{3, 6, 9, 12, \cdots\}</span> <span
+class="math display">B = \{\text{A, E, I, O, U}\}</span></p>
+<ol start="2" type="1">
+<li><strong>Set builder form:</strong> Each element of the set is
+represented by a symbol (<span class="math inline">x</span>). After the
+colon (<span class="math inline">:</span>), the characteristic
+properties of the elements are mentioned.</li>
+</ol>
+<p><span class="math display">A = \{x:x \text{ is divisible by 3}; x\in
+N\}</span> <span class="math display">B = \{x:x \text{ is a vowel in the
+English alphabet}\}</span></p>
+<blockquote>
+<ul>
+<li>The order in which elements are listed in a set do not matter.</li>
+</ul>
+<p><span class="math display">\{a, b, c\} = \{c, a, b\}</span></p>
+<ul>
+<li>All elements are counted only once in a set, i.e. repetition of
+elements in a set do not change the set. <span class="math display">A =
+\{x:x \text{ is a letter in the word PLANE}\}</span> <span
+class="math display">B = \{x:x \text{ is a letter in the word
+PLAN}\}</span> <span class="math display">A=B=\{\text{A, L, N,
+P}\}</span></li>
+</ul>
+</blockquote>
+<h2 id="common-sets">Common Sets</h2>
+<p><span class="math display">\begin{align*}
+  N &amp;= \text{natural numbers}\\
+  Z &amp;= \text{integers}\\
+  Q &amp;= \text{rational numbers}\\
+  R &amp;= \text{real numbers}
+\end{align*}</span></p>
+<h2 id="belongingness">Belongingness</h2>
+<p><span class="math inline">\in</span> = belongs to<br />
+<span class="math inline">\not\in</span> = does not belong to</p>
+<p><span class="math display">A = \{x:x \text{ is a factor of
+30}\}</span> <span class="math display">5 \in A</span> <span
+class="math display">7 \not\in A</span></p>
+<h2 id="null-set">Null Set</h2>
+<p>A set which does not contain any element.</p>
+<p><span class="math display">\phi = \{~ \}</span></p>
+<blockquote>
+<p>Two sets are said to be <strong>equal</strong> iff all the elements
+in both sets are same. <span class="math display">A = \{x:0\le x\le 5;
+x\in Z\}</span> <span class="math display">B = \{ 0, 1, 2, 3, 4, 5
+\}</span> <span class="math display">A = B</span></p>
+</blockquote>
+<h2 id="subsets">Subsets</h2>
+<p>A set <span class="math inline">X</span> is the <strong>subset
+of</strong> set <span class="math inline">A</span> iff all elements of
+<span class="math inline">X</span> are in <span
+class="math inline">A</span></p>
+<p><span class="math display">X = \{a, b\}</span> <span
+class="math display">A = \{a, b, c, d, e\}</span> <span
+class="math display">X\subset A</span></p>
+<p><span class="math inline">\subset</span> = proper subset of<br />
+<span class="math inline">\subseteq</span> = subset of</p>
+<p><span class="math display">A\subset B \text{ if } x \in A \implies x
+\in B</span></p>
+<blockquote>
+<ul>
+<li><span class="math inline">\phi</span> is a subset of every set.</li>
+<li>Every set is a subset of itself. <span
+class="math inline">(A\subseteq A)</span></li>
+<li><span class="math inline">N \subset Z, Z\subset Q, Q\subset
+R</span></li>
+</ul>
+</blockquote>
+<h2 id="intervals">Intervals</h2>
+<p>An interval is a <strong>subset of <span
+class="math inline">R</span></strong> which denotes a range of real
+numbers.</p>
+<p><strong>Notation:</strong><br />
+<span class="math inline">[</span> = closed end (included)<br />
+<span class="math inline">(</span> = open end (excluded)</p>
+<p><span class="math display">\textbf{[a, b]} = \{x:a\le x\le b; x\in
+R\}</span> <span class="math display">\textbf{[a, b)} = \{x:a\le x&lt;
+b; x\in R\}</span> <span class="math display">\textbf{(a, b]} =
+\{x:a&lt; x\le b; x\in R\}</span> <span class="math display">\textbf{(a,
+b)} = \{x:a&lt;x&lt;b; x\in R\}</span></p>
+<ul>
+<li><span class="math inline">(-\infty, \infty)</span> is the set of all
+real numbers.</li>
+<li><strong>Length</strong> of an interval <span class="math inline">(a,
+b)</span>, <span class="math inline">[a, b)</span>, <span
+class="math inline">(a, b]</span>, <span class="math inline">[a,
+b]</span> is <span class="math inline">(b-a)</span></li>
+</ul>
+<h2 id="cardinal-number">Cardinal Number</h2>
+<p>The number of elements in a set.</p>
+<p><span class="math display">A=\{a, b, c\}</span> <span
+class="math display">n(A)=3</span> <span
+class="math display">n(\phi)=0</span></p>
+<h2 id="power-set">Power Set</h2>
+<p>The set of all subsets.</p>
+<p><span class="math display">A = \{a, b, c\}</span> <span
+class="math display">P(A) = \{\phi, \{a\}, \{b\}, \{c\}, \{a, b\}, \{b,
+c\}, \{a, c\}, \{a, b, c\}\}</span></p>
+<ul>
+<li>The number of subsets = <span class="math inline">2^n</span> <span
+class="math display">n(A)=m\implies n\left(P(A)\right)=2^m</span></li>
+</ul>
+<h2 id="universal-set">Universal Set</h2>
+<p>The set containing all the possible elements in a particular
+context.</p>
+<p><span class="math display">U=R</span> <span
+class="math display">A=\{x:x^2-6x+5=0; x\in R\}</span></p>
+<ul>
+<li>All sets are subset of <span class="math inline">U</span>.</li>
+</ul>
+<h2 id="set-operations">Set Operations</h2>
+<h3 id="union-cup">Union <span class="math inline">(\cup)</span></h3>
+<p>Combination of all elements in the sets</p>
+<p><span class="math display">A = \{a,b, c\}</span> <span
+class="math display">B = \{b, c, d, e\}</span> <span
+class="math display">A\cup B=\{a,b,c,d,e\}</span></p>
+<p><span class="math display">A\cup B=\{x:x\in A \text{ or } x\in
+B\}</span></p>
+<h3 id="intersection-cap">Intersection <span
+class="math inline">(\cap)</span></h3>
+<p>Elements which are common in both the sets</p>
+<p><span class="math display">A = \{a,b, c\}</span> <span
+class="math display">B = \{b, c, d, e\}</span> <span
+class="math display">A\cap B=\{b,c\}</span></p>
+<p><span class="math display">A\cap B=\{x:x\in A \text{ and } x\in
+B\}</span></p>
+<h3 id="difference--">Difference <span
+class="math inline">(-)</span></h3>
+<p>Elements which are only present in the first set and not in the
+second set.</p>
+<p><span class="math display">A = \{a,b, c\}</span> <span
+class="math display">B = \{b, c, d, e\}</span> <span
+class="math display">A- B=\{a\}</span></p>
+<p><span class="math display">A - B = \{x:x\in A \text{ and } x\not\in
+B\}</span></p>
+<h3 id="complement">Complement <span
+class="math inline">(&#39;)</span></h3>
+<p>Elements which are not present in the set. (Inverse of the set)</p>
+<p><span class="math display">U=\{a, b, c, d, e, f, g\}</span> <span
+class="math display">A = \{a,b, c\}</span> <span
+class="math display">A&#39;=\{d, e, f, g\}</span></p>
+<p><span class="math display">A&#39;=U-A=\{x:x\not\in A; x\in
+U\}</span></p>
+<figure>
+<img src="../images/2022-05-26-13-02-21.png" width="600"
+alt="Operations on Sets" />
+<figcaption aria-hidden="true">Operations on Sets</figcaption>
+</figure>
+<h2 id="algebra-laws-of-sets">Algebra Laws of Sets</h2>
+<ol type="1">
+<li><strong>Idempotent Law</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">A\cup A=A</span></li>
+<li><span class="math inline">A\cap A=A</span></li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Identity Law</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">A\cap U=A</span></li>
+<li><span class="math inline">A\cup\phi=A</span></li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Commutative Law</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">A\cup B = B\cup A</span></li>
+<li><span class="math inline">A\cap B = B\cap A</span></li>
+</ul>
+<ol start="4" type="1">
+<li><strong>Associative Law</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">(A\cup B)\cup C=A\cup (B\cup
+C)</span></li>
+<li><span class="math inline">(A\cap B)\cap C=A\cap (B\cap
+C)</span></li>
+</ul>
+<ol start="5" type="1">
+<li><strong>Distributive Law</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">A\cup (B\cap C) = (A\cup B)\cap (A\cup
+C)</span></li>
+<li><span class="math inline">A\cap (B\cup C) = (A\cap B)\cup (A\cap
+C)</span></li>
+</ul>
+<ol start="6" type="1">
+<li><strong>De-Morgan’s Law</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">(A\cup B)&#39;=A&#39; \cap
+B&#39;</span></li>
+<li><span class="math inline">(A\cap B)&#39;=A&#39; \cup
+B&#39;</span></li>
+</ul>
+<ol start="7" type="1">
+<li><strong>Formulas in Practical Application</strong></li>
+</ol>
+<ul>
+<li><span class="math inline">n(A\cup B)=n(A)+n(B)-n(A\cap
+B)</span></li>
+<li><span class="math inline">n(A\cup B\cup C)=n(A)+n(B)+n(C)-n(A\cap
+B)-n(B\cap C)-n(C\cap A)+n(A\cap B\cap C)</span></li>
+</ul>
 </body>
 </html>

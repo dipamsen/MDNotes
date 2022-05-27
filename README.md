@@ -15,6 +15,14 @@ This repo uses [VSCode-renderable Markdown](https://code.visualstudio.com/docs/l
 3. Run `node . yourname.md` to generate html and pdf versions of the file.
 
 
+## Useful Snippets
+
+### Image with fixed dimensions
+
+```md
+![caption here](imagepath.png){ width=100px }
+```
+
 
 
 ### Creation of PDF

@@ -28,5 +28,5 @@ margin-left: 5mm
 margin-right: 5mm
 margin-top: 20mm
 margin-bottom: 20mm
-# footer-html: <div>Hi</div>
+header-html: header.html
 ...
