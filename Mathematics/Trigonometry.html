@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Trigonometry</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: KaTeX_Main;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 5mm;
+      padding-right: 5mm;
+      padding-top: 20mm;
+      padding-bottom: 20mm;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script>katex.__defineMacro("\\ud", "\\underset{\\text{#2}}{\\ce{#1}}")</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M"  crossorigin="anonymous"></script>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    blockquote {
+      margin: 1em;
+      padding: 0.5em 20px;
+      border: 5px solid darkgrey;
+      border-radius: 20px;
+      background-color: #eee; 
+      color: inherit;
+    }
+    table {
+      margin: 0 auto;
+      width: initial;
+      display: table;
+    }
+    th, td {
+      border: 1px solid black;
+    }
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="trigonometry"><strong>Trigonometry</strong></h1>
+<h2 id="degree-measurement-of-angles">Degree Measurement of Angles</h2>
+<p>Usually, we measure angles in degrees, where <span
+class="math inline">360\degree</span> is one complete rotation.</p>
+<p><span class="math display">1\degree = 60&#39;</span> <span
+class="math display">1&#39; = 60&#39;&#39;</span></p>
+<h2 id="radian-measurement-of-angles">Radian Measurement of Angles</h2>
+<p>Radians is another unit for measuring angles, where a complete
+rotation is marked as <span class="math inline">2\pi</span> radians.
+<span class="math display">360\degree=2\pi</span></p>
+<figure>
+<img src="../images/2022-05-27-23-37-39.png"
+alt="Some angles in Degrees and Radians" />
+<figcaption aria-hidden="true">Some angles in Degrees and
+Radians</figcaption>
+</figure>
+<blockquote>
+<ul>
+<li>A unit circle is a circle with radius 1 unit.</li>
+<li>The unit ‘radian’ is often omitted while writing radian angles.</li>
+</ul>
+</blockquote>
+<h2 id="definition">Definition</h2>
+<p><strong>The angle subtended at the centre by an arc of length <span
+class="math inline">x</span> in a unit circle is <span
+class="math inline">x</span> rad.</strong></p>
+<figure>
+<img src="../images/2022-05-27-23-44-19.png" width="340"
+alt="Definition" />
+<figcaption aria-hidden="true">Definition</figcaption>
+</figure>
+<figure>
+<img src="../images/2022-05-28-00-05-17.png" alt="Illustration" />
+<figcaption aria-hidden="true">Illustration</figcaption>
+</figure>
+<p><span class="math display">\boxed{\text{Radian measure} =
+\frac{\text{Arc length}}{\text{Radius}}}</span></p>
+<h2 id="degree-radian-conversion">Degree-Radian Conversion</h2>
+<p><span class="math display">180\degree = \pi</span> <span
+class="math display">1 \text{ radian} = \frac {180\degree}\pi=57\degree
+16&#39;</span> <span class="math display">1\degree = \frac
+\pi{180}=0.01746 \text{ radian}</span></p>
+<p><span class="math display">\boxed{\text{Radian measure} =
+\frac\pi{180}\times \text{Degree measure}}</span> <span
+class="math display">\boxed{\text{Degree measure} = \frac{180}\pi\times
+\text{Radian measure}}</span></p>
+<h2 id="trigonometric-functions">Trigonometric Functions</h2>
+<p>(See Figure 4)</p>
+<p><span class="math display">\boxed{\begin{aligned}\sin \theta = \text
+{The \textbf{y-coordinate} of the point on the unit circle}\\
+\cos \theta = \text {The \textbf{x-coordinate} of the point on the unit
+circle}\end{aligned}}</span></p>
+<figure>
+<img src="../images/2022-05-28-00-53-41.png"
+alt="Trigonometric Functions in a unit circle" />
+<figcaption aria-hidden="true">Trigonometric Functions in a unit
+circle</figcaption>
+</figure>
+<p><strong>Quadrantal Angles:</strong> Integral multiples of <span
+class="math inline">\frac\pi2</span></p>
+<p><img src="../images/2022-05-28-10-49-17.png" /></p>
+<h3 id="value-of-0">Value of 0</h3>
+<p><span class="math inline">\sin\theta</span> is 0 for the values <span
+class="math inline">\theta = 0, \pi, 2\pi, \cdots</span></p>
+<p><span class="math inline">\cos\theta</span> is 0 for the values <span
+class="math inline">\displaystyle\theta = \frac\pi2, 3\frac\pi2,
+\cdots</span> <span class="math display">
+\left.\begin{aligned}
+\therefore \sin\theta &amp;=0\implies \theta = n\pi\\
+\cos\theta &amp;=0\implies \theta = (2n+1)\frac\pi2
+\end{aligned}\qquad\right\rbrace n\in Z
+</span></p>
+<h3 id="other-trigonometric-functions">Other Trigonometric
+Functions</h3>
+<p><span class="math display">\tan x = \frac {\sin x}{\cos x}</span>
+<span class="math display">\cot x = \frac {\cos x}{\sin x}</span> <span
+class="math display">\cosec x = \frac {1}{\sin x}</span> <span
+class="math display">\sec x = \frac {1}{\cos x}</span></p>
+<h3 id="pythagorean-identities">Pythagorean Identities</h3>
+<p><span class="math display">\sin^2\theta+\cos^2\theta=1 </span> <span
+class="math display">1+\tan^2\theta=\sec^2\theta </span> <span
+class="math display">1+\cot^2\theta=\cosec^2\theta </span></p>
+<h2 id="sign-of-trigonometric-functions">Sign of Trigonometric
+Functions</h2>
+<h3 id="negative-angle">Negative Angle</h3>
+<p>From the unit circle, we can determine the value of functions for a
+negative angle.</p>
+<figure>
+<img src="../images/2022-05-28-01-15-34.png" width="320"
+alt="Negative Angle" />
+<figcaption aria-hidden="true">Negative Angle</figcaption>
+</figure>
+<p>We can see that <span class="math inline">\sin x=b; \cos
+x=a</span></p>
+<p>For negative value of <span class="math inline">x</span> (Figure 5),
+<em>the x coordinate remains unchanged, while the y coordinate becomes
+negative.</em></p>
+<p><span class="math display">\cos (-x)=\cos x</span> <span
+class="math display">\sin (-x)=-\sin x</span></p>
+<h3 id="sign-in-different-quadrants">Sign in different Quadrants</h3>
+<p><strong>Quadrant 1:</strong> <span class="math inline">a</span> and
+<span class="math inline">b</span> are both positive<br />
+<strong>Quadrant 2:</strong> <span class="math inline">a</span> is
+negative and <span class="math inline">b</span> is positive<br />
+<strong>Quadrant 3:</strong> <span class="math inline">a</span> and
+<span class="math inline">b</span> are both negative<br />
+<strong>Quadrant 4:</strong> <span class="math inline">a</span> is
+positive and <span class="math inline">b</span> is negative</p>
+<p>From the signs of <span class="math inline">\sin x</span> and <span
+class="math inline">\cos x</span>, we can find out the signs of all
+other trigonometric functions.</p>
+<figure>
+<img src="../images/2022-05-28-11-05-09.png" width="420"
+alt="Signs of Trigonometric Functions" />
+<figcaption aria-hidden="true">Signs of Trigonometric
+Functions</figcaption>
+</figure>
+<h2 id="domain-and-range">Domain and Range</h2>
+<h3 id="sin-x"><span class="math inline">\sin x</span></h3>
+<p><span class="math display">\text{Domain} = R</span> <span
+class="math display">\text{Range} = [-1, 1]</span></p>
+<h3 id="cos-x"><span class="math inline">\cos x</span></h3>
+<p><span class="math display">\text{Domain} = R</span> <span
+class="math display">\text{Range} = [-1, 1]</span></p>
+<h3 id="mathrmcosec-text-x"><span class="math inline">\mathrm{cosec}
+\text{ } x</span></h3>
+<p><span class="math display">\text{Domain} = \{x:x\in R; x\ne n\pi,
+n\in Z\}</span> <span class="math display">\text{Range} = (-\infty, -1]
+\cup [1, \infty)</span></p>
+<h3 id="sec-x"><span class="math inline">\sec x</span></h3>
+<p><span class="math display">\text{Domain} = \{x:x\in R; x\ne
+(2n+1)\frac\pi2, n\in Z\}</span> <span class="math display">\text{Range}
+= (-\infty, -1] \cup [1, \infty)</span></p>
+<h3 id="tan-x"><span class="math inline">\tan x</span></h3>
+<p><span class="math display">\text{Domain} = \{x:x\in R; x\ne
+(2n+1)\frac\pi2, n\in Z\}</span> <span class="math display">\text{Range}
+= R</span></p>
+<h3 id="cot-x"><span class="math inline">\cot x</span></h3>
+<p><span class="math display">\text{Domain} = \{x:x\in R; x\ne n\pi,
+n\in Z\}</span> <span class="math display">\text{Range} = R</span></p>
+<figure>
+<img src="../images/2022-05-28-11-31-43.png"
+alt="Graphs of Trigonometric Functions" />
+<figcaption aria-hidden="true">Graphs of Trigonometric
+Functions</figcaption>
+</figure>
+<!-- ![Graphs of Trigonometric Functions](../images/2022-05-28-11-32-43.png) -->
+<h2 id="trigonometric-identities">Trigonometric Identities</h2>
+<ul>
+<li><strong>Negative Angle</strong>*</li>
+</ul>
+<ol type="1">
+<li><span class="math inline">\sin (-a)=-\sin a</span></li>
+<li><span class="math inline">\cos (-a)=\cos a</span></li>
+<li><span class="math inline">\tan (-a)=-\tan a</span></li>
+</ol>
+<ul>
+<li><strong>Sum or Difference of Angles</strong></li>
+</ul>
+<ol start="4" type="1">
+<li><p><span class="math inline">\sin (a+b) = \sin a\cos b + \cos a\sin
+b</span></p></li>
+<li><p><span class="math inline">\sin (a-b) = \sin a\cos b - \cos a\sin
+b</span></p></li>
+<li><p><span class="math inline">\cos (a+b) = \cos a\cos b - \sin a\sin
+b</span></p></li>
+<li><p><span class="math inline">\cos (a-b) = \cos a\cos b + \sin a\sin
+b</span></p></li>
+<li><p><span class="math inline">\displaystyle\tan (a+b) = \frac{\tan a
++ \tan b}{1-\tan a \tan b}</span></p></li>
+<li><p><span class="math inline">\displaystyle\tan (a-b) = \frac{\tan a
+- \tan b}{1+\tan a \tan b}</span></p></li>
+<li><p><span class="math inline">\displaystyle\cot (a+b) = \frac{\cot
+a\cot b -1}{\cot b + \cot a}</span></p></li>
+<li><p><span class="math inline">\displaystyle\cot (a-b) = \frac{\cot
+a\cot b +1}{\cot b - \cot a}</span></p></li>
+</ol>
+<ul>
+<li><strong>Multiples of <span
+class="math inline">\frac\pi2</span></strong>*</li>
+</ul>
+<ol start="12" type="1">
+<li><p><span class="math inline">\displaystyle\sin
+\left(\frac\pi2-x\right) = \cos x</span></p></li>
+<li><p><span class="math inline">\displaystyle\sin
+\left(\frac\pi2+x\right) = -\cos x</span></p></li>
+<li><p><span class="math inline">\displaystyle\sin (\pi-x) = \sin
+x</span></p></li>
+<li><p><span class="math inline">\displaystyle\sin (\pi+x) = -\sin
+x</span></p></li>
+<li><p><span class="math inline">\displaystyle\sin (2\pi-x) = -\sin
+x</span></p></li>
+<li><p><span class="math inline">\displaystyle\cos
+\left(\frac\pi2-x\right) = \sin x</span></p></li>
+<li><p><span class="math inline">\displaystyle\cos
+\left(\frac\pi2+x\right) = \sin x</span></p></li>
+<li><p><span class="math inline">\displaystyle\cos (\pi-x) = -\cos
+x</span></p></li>
+<li><p><span class="math inline">\displaystyle\cos (\pi+x) = -\cos
+x</span></p></li>
+<li><p><span class="math inline">\displaystyle\cos (2\pi-x) = \cos
+x</span></p></li>
+</ol>
+<ul>
+<li><strong>Double Angle</strong></li>
+</ul>
+<ol start="22" type="1">
+<li><p><span class="math inline">\sin 2x=2\sin x\cos x</span></p></li>
+<li><p><span class="math inline">\begin{aligned}[t]\cos 2x &amp;=2\cos^2
+x - 1 \\ &amp;= 1 - 2\sin^2 x\\ &amp;= \cos^2 x-\sin^2
+x\end{aligned}</span></p></li>
+<li><p><span class="math inline">\displaystyle\tan 2x=\frac{2\tan
+x}{1+\tan^2x}</span></p></li>
+</ol>
+<ul>
+<li><strong>Triple Angle</strong></li>
+</ul>
+<ol start="25" type="1">
+<li><p><span class="math inline">\sin 3x=3\sin x - 4\sin^3
+x</span></p></li>
+<li><p><span class="math inline">\cos 3x=4\cos^3 x - 3\cos
+x</span></p></li>
+<li><p><span class="math inline">\displaystyle\tan 3x=\frac{3\tan x -
+\tan^3 x}{1-3\tan^2 x}</span></p></li>
+</ol>
+<ul>
+<li><strong>Sum/Difference of Sines and Cosines</strong></li>
+</ul>
+<ol start="28" type="1">
+<li><p><span class="math inline">\displaystyle\cos a + \cos b=2\cos
+\left(\frac{a+b}2\right)\cos\left(\frac{a-b}2\right)</span></p></li>
+<li><p><span class="math inline">\displaystyle\cos a - \cos b=-2\sin
+\left(\frac{a+b}2\right)\sin\left(\frac{a-b}2\right)</span></p></li>
+<li><p><span class="math inline">\displaystyle\sin a + \sin b=2\sin
+\left(\frac{a+b}2\right)\cos\left(\frac{a-b}2\right)</span></p></li>
+<li><p><span class="math inline">\displaystyle\sin a - \sin b=2\cos
+\left(\frac{a+b}2\right)\sin\left(\frac{a-b}2\right)</span></p></li>
+</ol>
+<ul>
+<li><strong>Product of Sines and Cosines (Inverse of
+28-31)</strong></li>
+</ul>
+<ol start="32" type="1">
+<li><p><span class="math inline">2\cos a\cos b = \cos
+(a+b)+\cos(a-b)</span></p></li>
+<li><p><span class="math inline">-2\sin a\sin b = \cos
+(a+b)-\cos(a-b)</span></p></li>
+<li><p><span class="math inline">2\sin a\cos b = \sin
+(a+b)+\sin(a-b)</span></p></li>
+<li><p><span class="math inline">2\cos a\sin b = \sin
+(a+b)-\sin(a-b)</span></p></li>
+</ol>
+<ul>
+<li><strong>Zero Values</strong>*</li>
+</ul>
+<ol start="36" type="1">
+<li><p><span class="math inline">\sin x = 0 \implies x=n\pi, n\in
+Z</span></p></li>
+<li><p><span class="math inline">\displaystyle\cos x = 0 \implies
+x=(2n+1)\frac\pi2, n\in Z</span></p></li>
+</ol>
+<ul>
+<li><strong>Equal Values</strong>*</li>
+</ul>
+<ol start="38" type="1">
+<li><span class="math inline">\sin x = \sin y \implies x = n\pi +
+(-1)^ny</span></li>
+<li><span class="math inline">\cos x = \cos y \implies x = 2n\pi \pm
+y</span></li>
+<li><span class="math inline">\tan x = \tan y \implies x = n\pi +
+y</span></li>
+</ol>
+<p>*These identities can be easily represented by the Unit Circle.</p>
+</body>
+</html>

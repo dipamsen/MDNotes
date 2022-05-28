@@ -11,6 +11,7 @@ const exec = util.promisify(require("child_process").exec);
   const filename = mdFile.split(".")[0];
   const htmlCmd = `pandoc -o ${filename}.html ${filename}.md --metadata-file html-meta.yaml --katex -s`;
   const pdfCmd = `pandoc -o ${filename}.pdf ${filename}.md --metadata-file pdf-meta.yaml -s --shift-heading-level-by -1 --template templates/default.latex`;
+  // const texCmd = `pandoc -o ${filename}.tex ${filename}.md --metadata-file pdf-meta.yaml -s --shift-heading-level-by -1 --template templates/default.latex`;
 
   console.log("Converting to HTML. (Using KaTeX)");
   const htmlP = await exec(htmlCmd);

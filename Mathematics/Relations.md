@@ -116,4 +116,3 @@ $$(f\times g)(x) = f(x)\times g(x)$$
 ### Quotient
 
 $$\left(\frac fg\right)(x) = \frac {f(x)} {g(x)}$$
-

@@ -9,6 +9,7 @@ fontsize: 14pt
 documentclass: extarticle
 author: Dipam Sen (Fun Planet)
 header-includes: |
+    \usepackage{gensymb}
     \usepackage{mhchem}
     \usepackage{tcolorbox}
     \usepackage{fancyhdr}
@@ -17,7 +18,7 @@ header-includes: |
     \pagestyle{fancy}
     \graphicspath{{./images/}}
     \fancyhead[C]{\includegraphics[width=2cm]{fplogo}}
-    \fancyhead[L]{JEE Mathematics\\~\\}
+    \fancyhead[L]{JEE Mathematics (11)\\~\\}
     \fancyhead[R]{\thetitle{}\\~\\}
     \renewcommand{\headrulewidth}{0pt}
     \renewcommand{\footrulewidth}{2pt}
@@ -25,5 +26,6 @@ header-includes: |
     \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
     \newcommand{\ud}[2]{\underset{\text{#2}}{\ce{#1}}}
     \let\OldRule\rule
+    \newcommand{\cosec}{\text{cosec }}
     \renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
 ...
