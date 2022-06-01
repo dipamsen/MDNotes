@@ -26,6 +26,8 @@ header-includes: |
     \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
     \newcommand{\ud}[2]{\underset{\text{#2}}{\ce{#1}}}
     \let\OldRule\rule
-    \newcommand{\cosec}{\text{cosec }}
     \renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+    \newcommand{\cosec}{\mathrm{cosec}\ }
+    \renewcommand{\Re}{\mathrm{Re}\ }
+    \renewcommand{\Im}{\mathrm{Im}\ }
 ...

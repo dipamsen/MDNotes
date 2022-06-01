@@ -23,7 +23,27 @@ This repo uses [VSCode-renderable Markdown](https://code.visualstudio.com/docs/l
 ![caption here](imagepath.png){ width=100px }
 ```
 
+### Frame Box
 
+```tex
+\boxed{40} cm
+```
+
+### Multiline Math (`aligned`)
+```tex
+$
+\begin{aligned}[t]
+  \cos 2x &=2\cos^2 x - 1 \\ 
+  &= 1 - 2\sin^2 x \\ 
+  &= \cos^2 x-\sin^2 x
+\end{aligned}
+$
+```
+
+### Numbered Equation / Right Text
+```md
+$$x+y=5\tag{1}$$
+```
 
 ### Creation of PDF
 
