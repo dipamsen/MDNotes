@@ -1,0 +1,10 @@
+---
+geometry:
+  - margin=1.5cm
+  - bottom=2.5cm
+  - top=2.5cm
+  - headsep=0cm
+  - headheight=5cm
+fontsize: 14pt
+documentclass: extarticle
+author: Dipam Sen (Fun Planet)

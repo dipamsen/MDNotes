@@ -17,6 +17,13 @@ This repo uses [VSCode-renderable Markdown](https://code.visualstudio.com/docs/l
 
 ## Useful Snippets
 
+### Macros
+
+```
+$$\gdef\ud#1#2{\\underset{\\text{#2}}{\\ce{#1}}}$$
+$$\gdef\cosec{\mathrm{cosec}\ }$$
+```
+
 ### Image with fixed dimensions
 
 ```md

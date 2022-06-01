@@ -1,0 +1,36 @@
+---
+header-includes-end: <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mhchem.min.js" crossorigin="anonymous"></script>
+header-includes: |
+  <style>
+    h1 {
+      text-align: center;
+    }
+    blockquote {
+      margin: 1em;
+      padding: 0.5em 20px;
+      border: 5px solid darkgrey;
+      border-radius: 20px;
+      background-color: #eee; 
+      color: inherit;
+    }
+    table {
+      margin: 0 auto;
+      width: initial;
+      display: table;
+    }
+    th, td {
+      border: 1px solid black;
+    }
+  </style>
+  <script>
+  addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("img")
+  images.forEach(img => {
+    img.setAttribute("src", '../../..'+img.getAttribute('src'))
+  })})
+  </script>
+mainfont: KaTeX_Main
+margin-left: 5mm
+margin-right: 5mm
+margin-top: 20mm
+margin-bottom: 20mm
