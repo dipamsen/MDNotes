@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Inequalities</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: KaTeX_Main;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 5mm;
+      padding-right: 5mm;
+      padding-top: 20mm;
+      padding-bottom: 20mm;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    blockquote {
+      margin: 1em;
+      padding: 0.5em 20px;
+      border: 5px solid darkgrey;
+      border-radius: 20px;
+      background-color: #eee; 
+      color: inherit;
+    }
+    table {
+      margin: 0 auto;
+      width: initial;
+      display: table;
+    }
+    th, td {
+      border: 1px solid black;
+    }
+  </style>
+  <script>
+  addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("img")
+  images.forEach(img => {
+    img.setAttribute("src", '../../..'+img.getAttribute('src'))
+  })})
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mhchem.min.js" crossorigin="anonymous"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="inequalities"><strong>Inequalities</strong></h1>
+<p>Inequalities are algebraic statements which use the symbols <span
+class="math inline">&lt;</span>, <span class="math inline">&gt;</span>,
+<span class="math inline">\le</span>, <span
+class="math inline">\ge</span>.</p>
+<p><span class="math display">5x+3\ge 10</span> <span
+class="math display">x(x-1)&lt;0</span></p>
+<blockquote>
+<p><strong>Solution Set:</strong> The set of all values of <span
+class="math inline">x</span> satisfying the inequality.</p>
+</blockquote>
+<h2 id="some-important-points">Some important points</h2>
+<ul>
+<li>Any number can be added/subtracted from LHS and RHS. <span
+class="math display">x+3&lt;0</span> <span
+class="math display">x&lt;-3\tag{subtract $3$}</span></li>
+<li>On multiplying/dividing a <strong>positive number</strong> to both
+sides, the inequality stays. <span class="math display">5x&gt;50</span>
+<span class="math display">x&gt;10\tag{divide $5$}</span></li>
+<li>On multiplying/dividing a <strong>negative number</strong> to both
+sides, the inequality inverts. <span
+class="math display">-x&gt;-2</span> <span
+class="math display">x&lt;2\tag{multiply $-1$}</span></li>
+</ul>
+<h2 id="linear-inequalities-in-one-variable">Linear Inequalities in One
+Variable</h2>
+<p><span class="math display">3x-2&lt;0</span></p>
+<p>These inequalities can be solved easily by following the rules of
+inequalities.</p>
+<p>Example 1 <span class="math display">3x-2&lt;0</span> <span
+class="math display">3x&lt;2</span> <span
+class="math display">x&lt;\frac23</span> <span class="math display">x\in
+\left(-\infty, \frac23\right)</span></p>
+<blockquote>
+<p><strong>When a pair of linear inequalities are given, we take the
+intersection of the solution sets of both the inequalities.</strong></p>
+<p>Example 2 <span
+class="math display">\frac{5x}4+\frac{3x}8&gt;\frac{39}8 \text{ and }
+\frac{2x-1}{12}-\frac{x-1}3&lt;\frac{3x+1}4 </span> <span
+class="math display">\begin{aligned}
+\text{Eqn 1: } &amp;\frac{5x}4+\frac{3x}8&gt;\frac{39}8\\
+&amp;10x+3x&gt;39\\
+&amp;13x&gt;39\\
+&amp;\boxed{x&gt;3}\\
+\text{Eqn 2: } &amp;\frac{2x-1}{12}-\frac{x-1}3&lt;\frac{3x+1}4\\
+&amp;(2x-1)-4(x-1)&lt;3(3x+1)\\
+&amp;2x-1-4x+4&lt;9x+3\\
+&amp;-2x+3&lt;9x+3\\
+&amp;0&lt;11x\\
+&amp;\boxed{x&gt;0}
+\end{aligned}</span> The intersection of the solutions <span
+class="math inline">x&gt;0</span> and <span
+class="math inline">x&gt;3</span> is <span
+class="math inline">x&gt;3</span>.</p>
+<p><span class="math inline">\therefore x\in (3,\infty)</span></p>
+</blockquote>
+<p>Example 3 <span class="math display">2\ge 5x-2\ge 4</span> <span
+class="math display">4\ge 5x\ge 6</span> <span
+class="math display">\frac45\ge x\ge \frac65</span> <span
+class="math display">x\in\left[\frac45,\frac65\right]</span></p>
+<h2 id="inequalities-of-higher-order">Inequalities of Higher Order</h2>
+<p>We use the <strong>Wavy Curve Method</strong> to solve general
+inequalities.</p>
+<p>Example 4 <span class="math display">(x-2)(x+1)&gt;0</span></p>
+<ol type="1">
+<li><p><strong>We plot the roots of the LHS on a number
+line.</strong></p>
+<p>We plot <span class="math inline">-1</span> and <span
+class="math inline">2</span> on the number line.</p>
+<p><img src="/images/2022-06-02-13-30-30.png" width="500" /></p></li>
+<li><p><strong>Starting from the right hand side, we check the sign of
+the expression at that value <span
+class="math inline">x</span>.</strong></p>
+<p>When <span class="math inline">x&gt;2</span>, then the value of <span
+class="math inline">(x-2)(x+1)</span> will be <span
+class="math inline">+\mathrm{ve}</span>.</p>
+<p><img src="/images/2022-06-02-13-30-07.png" width="500" /></p></li>
+<li><p><strong>Going towards the left, we check the power of the
+factor.</strong></p>
+<ul>
+<li>If the power is odd, <strong>the opposite sign</strong> is indicated
+on the next interval.</li>
+<li>If the power is even, <strong>the same sign</strong> is indicated on
+the next interval.</li>
+</ul>
+<p>The factor <span class="math inline">(x-2)</span> is raised to an odd
+power (<span class="math inline">1</span>). So the next interval (-1 to
+2) will be <span class="math inline">-\mathrm{ve}</span>.</p>
+<p><img src="/images/2022-06-02-13-29-54.png" width="500" /></p></li>
+<li><p><strong>Continue till all intervals are marked.</strong></p>
+<p>The factor <span class="math inline">(x+1)</span> is raised to an odd
+power (<span class="math inline">1</span>). So the next interval (<span
+class="math inline">-\infty</span> to -1) will be <span
+class="math inline">+\mathrm{ve}</span>.</p>
+<p><img src="/images/2022-06-02-13-28-57.png" width="500" /></p></li>
+<li><p><strong>We create the solution set based on the number
+line.</strong></p>
+<p>We want to find all values of <span class="math inline">x</span> such
+that <span class="math inline">(x-2)(x+1)</span> is greater that <span
+class="math inline">0</span>.</p>
+<p><span class="math inline">\therefore x\in(-\infty, -1)\cup(2,
+\infty)</span></p></li>
+</ol>
+<blockquote>
+<ul>
+<li>To use the Wavy Curve Method, we must convert the inequality such
+that:
+<ul>
+<li>LHS is a polynomial with linear factors.</li>
+<li>RHS is 0.</li>
+</ul></li>
+<li>The roots themselves are included in the solution only if the sign
+of inequality is <span class="math inline">\ge</span> or <span
+class="math inline">\le</span>.</li>
+</ul>
+</blockquote>
+<hr />
+<p>Example 5</p>
+<p><span class="math display">\frac{3x-1}{x-1}\ge 0</span></p>
+<p><img src="/images/2022-06-02-14-31-02.png" /></p>
+<p><span class="math display">\boxed{x\in \left(-\infty, \frac13\right]
+\cup \left(1, \infty\right)}</span></p>
+<p>Note that here <span class="math inline">\frac13</span> is included
+in the solution set because the sign of the inequality is <span
+class="math inline">\ge</span>.</p>
+<p>However, <span class="math inline">1</span> is not included, because
+the factor <span class="math inline">(x-1)</span> is in the denominator
+of the expression. When <span class="math inline">x=1</span>, the
+expression becomes <em>undefined</em>.</p>
+<hr />
+<p>Example 6 <span class="math display">\frac{2x-3}{3x-5}\ge3</span></p>
+<p><span class="math display">\frac{2x-3}{3x-5}-3\ge0</span> <span
+class="math display">\frac{2x-3-9x+15}{3x-5}\ge0</span> <span
+class="math display">\frac{-7x+12}{3x-5}\ge0</span> <span
+class="math display">\frac{7x-12}{3x-5}\le0</span></p>
+<p><img src="/images/2022-06-02-14-51-38.png" /></p>
+<p><span class="math display">\boxed{x\in\left(\frac53,
+\frac{12}7\right]}</span></p>
+</body>
+</html>

@@ -77,7 +77,7 @@ function createHTML(input, output) {
         "config/html-meta.yaml",
         "--katex",
         "-s",
-        "-V",
+        // "-V",
         // "pagetitle=" + title.replace(/\*/g, "") + "",
         "--template",
         "templates/default.html",
