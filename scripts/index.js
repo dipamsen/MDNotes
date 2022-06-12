@@ -15,9 +15,11 @@ const pdfOpts = [
   "--template",
   "templates/default.latex",
   "--lua-filter",
+  "filters/center.lua",
+  "--lua-filter",
   "filters/imgresolve.lua",
-  "-V",
-  "headertext=JEE Mathematics (11)",
+  // "-V",
+  // "headertext=JEE Mathematics (11)",
 ];
 
 (async () => {

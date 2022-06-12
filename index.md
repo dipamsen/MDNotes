@@ -23,3 +23,8 @@ Inequalities
 | Mathematical Induction  | [Webpage](out/Mathematics/html/Induction.html) \| [PDF](out/Mathematics/pdf/Induction.pdf)       |
 | Complex Numbers         | [Webpage](out/Mathematics/html/Complex.html) \| [PDF](out/Mathematics/pdf/Complex.pdf)           |
 | Inequalities            | [Webpage](out/Mathematics/html/Inequalities.html) \| [PDF](out/Mathematics/pdf/Inequalities.pdf) |
+
+## Chemistry
+
+* **UNIT I: Some Basic Concepts of Chemistry**
+  * **Matter, Atoms and Molecules**: [Webpage](out/Chemistry/html/Matter.html) \| [PDF](out/Chemistry/pdf/Matter.pdf) 

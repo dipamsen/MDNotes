@@ -1,0 +1,260 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  14pt,
+]{extarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1.5cm,bottom=2.5cm,top=2.5cm,headsep=0cm,headheight=5cm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\usepackage{gensymb}
+\usepackage{mhchem}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{titling}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Matter, Atoms and Molecules},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Matter, Atoms and Molecules}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{\textbf{Unit 1:} Some Basic Concepts of Chemistry}
+\author{}
+\date{}
+
+
+\pagestyle{fancy}
+% \graphicspath{{./images/}}
+\fancyhead[C]{\includegraphics[width=2cm]{./images/fplogo}}
+\fancyhead[L]{JEE Chemistry\\~\\}
+\fancyhead[R]{\thetitle{}\\~\\}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{2pt}
+\newtcolorbox{myquote}{colback=gray!25, colframe=gray!75!black}
+\renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
+\let\OldRule\rule
+\renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{quote}
+\textbf{Topics:} Matter and its nature; Dalton's atomic theory; Concept
+of atom, molecule, element, and compound
+\end{quote}
+
+As we know, \textbf{anything which occupies space and has mass is called
+matter.}
+
+\begin{itemize}
+\tightlist
+\item
+  All matter is made up of atoms.
+\end{itemize}
+
+\hypertarget{states-of-matter}{%
+\section{States of Matter}\label{states-of-matter}}
+
+\begin{longtable}[]{@{}ccc@{}}
+\toprule()
+\textbf{State} & \textbf{Definite Volume} & \textbf{Definite Shape} \\
+\midrule()
+\endhead
+\textbf{Solid} & Yes & Yes \\
+\textbf{Liquid} & Yes & No \\
+\textbf{Gas} & No & No \\
+\bottomrule()
+\end{longtable}
+
+\[\ce{Solid <=>[heat][cool] Liquid <=>[heat][cool] Gas}\]
+
+\hypertarget{classification-of-matter}{%
+\section{Classification of Matter}\label{classification-of-matter}}
+
+\begin{center}\includegraphics[width=5.20833in,height=\textheight]{./images/2022-06-12-15-27-41.png}\end{center}
+
+\hypertarget{element}{%
+\subsection{Element}\label{element}}
+
+An \textbf{Element} is a pure substance which is made up of only one
+type of atom. It cannot be decomposed or built from simpler
+substances.\\
+\emph{Eg: Gold, Hydrogen}
+
+\begin{itemize}
+\tightlist
+\item
+  Metals are further classified as Metals, Non Metals and Metalloids.
+\end{itemize}
+
+\hypertarget{compound}{%
+\subsection{Compound}\label{compound}}
+
+A \textbf{Compound} is obtained by the reaction of two or more elements
+in a fixed mass ratio.
+
+\begin{itemize}
+\tightlist
+\item
+  The property of the compound does not depend on its constituent
+  elements.
+\item
+  Its constituent elements cannot be extracted by physical means.\\
+  \emph{Eg: Water, Carbon Dioxide}
+\end{itemize}
+
+\textbf{Types of Compounds:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Organic Compounds:} These compounds are obtained from living
+  sources such as plants and animals. All these compounds contain
+  carbon.
+\item
+  \textbf{Inorganic Compounds:} These compounds are obtained fom
+  non-living sources such as rocks and minerals.
+\end{itemize}
+
+\hypertarget{mixture}{%
+\subsection{Mixture}\label{mixture}}
+
+A \textbf{Mixture} is the product obtainend by mixing two or more
+substances.
+
+\begin{itemize}
+\tightlist
+\item
+  The proportion is not fixed and the properties of constituent
+  substances are retained.
+\item
+  Physical methods can be used to extract the constituents.
+\item
+  Mixtures can be homogenous or heterogenous.\\
+  \emph{Eg: Air, Tea, Sugar Solution}
+\end{itemize}
+
+\textbf{Types of Mixtures:}
+
+\begin{itemize}
+\tightlist
+\item
+  A mixture is said to be \textbf{homogeneous} if it has an uniform
+  composition throughout. (Air)
+\item
+  A mixture is said to be \textbf{heterogeneous} if its composition is
+  not unique throughout. (Mixture of Iron fillings and Sulphur)
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{./images/2022-06-12-15-51-27.png}
+\caption{Difference between Compounds and Mixtures}
+\end{figure}
+
+\hypertarget{atoms-and-molecules}{%
+\section{Atoms and Molecules}\label{atoms-and-molecules}}
+
+An atom is the smallest unit of matter. Molecules are made up of atoms.
+
+\begin{center}\includegraphics[width=4.16667in,height=\textheight]{./images/2022-06-12-14-45-14.png}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  All substances are made up of molecules.\\
+  \emph{Eg: Hydrogen Molecule (\(\ce{H2}\)), Water Molecule
+  (\(\ce{H2O}\)), etc.}
+\end{itemize}
+
+\hypertarget{daltons-atomic-theory}{%
+\section{Dalton's Atomic Theory}\label{daltons-atomic-theory}}
+
+John Dalton proposed the first Atomic Theory in 1808.
+
+\begin{itemize}
+\tightlist
+\item
+  Matter consists of indivisible atoms.
+\item
+  All atoms of a given element have identical properties, including
+  mass. Atoms of different elements differ in mass.
+\item
+  Compounds are formed by the combination of different elements in a
+  fixed ratio.
+\item
+  Atoms are neither created nor destroyed in a chemical reaction.
+  Chemical reactions involve reorganisation of atoms.
+\end{itemize}
+
+\end{document}
