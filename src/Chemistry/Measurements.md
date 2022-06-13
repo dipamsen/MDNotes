@@ -42,8 +42,8 @@ In the SI system, units for **seven** base quantities are defined. All the other
 
 These prefixes are used with the SI units to express a large or small quantities.
 
-|Multiple|Prefix|Symbol|
-|----|----|----|
+|**Multiple**|**Prefix**|**Symbol**|
+|:----:|:----:|:----:|
 |$10^{-15}$|femto|$\pu{f}$|
 |$10^{-12}$|pico|$\pu{p}$|
 |$10^{-9}$|nano|$\pu{n}$|
