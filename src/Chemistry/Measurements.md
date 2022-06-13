@@ -6,7 +6,7 @@ subtitle: |
   \textbf{Unit 1:} Some Basic Concepts in Chemistry
 ...
 
-# Chemical Measurements
+# **Chemical Measurements**
 
 > **Topics:** Physical quantities and their measurements in Chemistry; Precision and Accuracy; Significant Figures; SI Units; Dimensional Analysis
 
@@ -27,7 +27,7 @@ $$\pu{47km}$$
 ## SI Units
 By convention, scientists use the **SI System of Units** as a standard for measurement of various physical properties.
 
-In the SI system, units for **seven** base quantities are defined. All the other quantities can be derived by from the base quantities.
+In the SI system, units for **seven** base quantities are defined. (See Figure 1.) All the other quantities can be derived by from the base quantities.
 
 ![Definition of SI Base units](/images/2022-06-12-22-49-50.png)
 
