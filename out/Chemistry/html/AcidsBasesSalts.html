@@ -175,6 +175,12 @@
     }
   </style>
   <script>
+    // if there is title remove the other title
+    if (document.querySelector(".title")) {
+      document.querySelector("h1:not(.title)").style.display = "none"
+    }
+  </script>
+  <script>
   addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll("img")
   images.forEach(img => {
@@ -199,6 +205,7 @@
   </script>
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mhchem.min.js" crossorigin="anonymous"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -755,100 +762,5 @@ class="uri">https://www.selfstudys.com/uploads/pdf/9dxNgiTnwtcUf87sTjMa.pdf</a><
 href="https://www.selfstudys.com/uploads/pdf/xeOlvzd2t6kuB8P69cvJ.pdf"
 class="uri">https://www.selfstudys.com/uploads/pdf/xeOlvzd2t6kuB8P69cvJ.pdf</a></li>
 </ul>
-&lt;!DOCTYPE html&gt; &lt;html xmlns=“http://www.w3.org/1999/xhtml”
-lang=“<span class="math inline">lang</span>” xml:lang=“<span
-class="math inline">lang</span>”<span class="math inline">if(dir)</span>
-dir=“<span class="math inline">dir</span>”<span
-class="math inline">endif</span>&gt;
-<head>
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<span class="math inline">for(author-meta)</span>
-<meta name="author" content="$author-meta$" />
-<span class="math inline">endfor</span> <span
-class="math inline">if(date-meta)</span>
-<meta name="dcterms.date" content="$date-meta$" />
-<span class="math inline">endif</span> <span
-class="math inline">if(keywords)</span>
-<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-<span class="math inline">endif</span> <span
-class="math inline">if(description-meta)</span>
-<meta name="description" content="$description-meta$" />
-<span class="math inline">endif</span>
-<!-- <title>$title-meta$</title> -->
-<title>
-<span class="math inline">if(title-prefix)</span><span
-class="math inline">title-prefix</span> ΓÇô <span
-class="math inline">endif</span><span
-class="math inline">pagetitle</span>
-</title>
-<style>
-    $styles.html()$
-  </style>
-<span class="math inline">for(css)</span>
-<link rel="stylesheet" href="$css$" /> <span
-class="math inline">endfor</span> <span
-class="math inline">for(header-includes)</span> <span
-class="math inline">header-includes</span> <span
-class="math inline">endfor</span> <span
-class="math inline">if(math)</span> <span
-class="math inline">math</span> <span class="math inline">endif</span>
-<span class="math inline">for(header-includes-end)</span> <span
-class="math inline">header-includes-end</span> <span
-class="math inline">endfor</span> <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-<span class="math inline">for(include-before)</span> <span
-class="math inline">include-before</span> <span
-class="math inline">endfor</span> <span
-class="math inline">if(title)</span>
-<header id="title-block-header">
-<h1 class="title">
-<span class="math inline">title</span>
-</h1>
-<span class="math inline">if(subtitle)</span>
-<p class="subtitle">
-<span class="math inline">subtitle</span>
-</p>
-<span class="math inline">endif</span> <span
-class="math inline">for(author)</span>
-<p class="author">
-<span class="math inline">author</span>
-</p>
-<span class="math inline">endfor</span> <span
-class="math inline">if(date)</span>
-<p class="date">
-<span class="math inline">date</span>
-</p>
-<span class="math inline">endif</span> <span
-class="math inline">if(abstract)</span>
-<div class="abstract">
-<div class="abstract-title">
-<span class="math inline">abstract-title</span>
-</div>
-<p><span class="math inline">abstract</span></p>
-</div>
-<span class="math inline">endif</span>
-</header>
-<span class="math inline">endif</span> <span
-class="math inline">if(toc)</span>
-<nav id="$idprefix$TOC" role="doc-toc">
-<span class="math inline">if(toc-title)</span>
-<h2 id="$idprefix$toc-title">
-<span class="math inline">toc-title</span>
-</h2>
-<span class="math inline">endif</span> <span
-class="math inline">table-of-contents</span>
-</nav>
-<span class="math inline">endif</span> <span
-class="math inline">body</span> <span
-class="math inline">for(include-after)</span> <span
-class="math inline">include-after</span> <span
-class="math inline">endfor</span>
-</body>
-</html>
 </body>
 </html>

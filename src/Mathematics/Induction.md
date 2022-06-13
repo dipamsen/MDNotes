@@ -1,3 +1,7 @@
+---
+headertext: 11th Mathematics (JEE)
+...
+
 # **Mathematical Induction**
 
 Mathematical Induction is a principle which is used to prove a proposition $P$ to be true for all natural numbers $n$.

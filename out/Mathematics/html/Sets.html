@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<!-- <title></title> -->
   <title>Sets</title>
   <style>
     html {
@@ -175,6 +174,12 @@
       border: 1px solid black;
     }
   </style>
+  <script>
+    // if there is title remove the other title
+    if (document.querySelector(".title")) {
+      document.querySelector("h1:not(.title)").style.display = "none"
+    }
+  </script>
   <script>
   addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll("img")

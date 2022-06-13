@@ -1,3 +1,7 @@
+---
+headertext: 11th Mathematics (JEE)
+...
+
 # **Trigonometry**
 
 ## Degree Measurement of Angles

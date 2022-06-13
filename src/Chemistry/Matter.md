@@ -6,7 +6,7 @@ subtitle: |
 author: null
 ...
 
-# Matter, Atoms and Molecules
+# **Matter, Atoms and Molecules**
 
 > **Topics:** Matter and its nature; Dalton's atomic theory; Concept of atom, molecule, element, and compound
 

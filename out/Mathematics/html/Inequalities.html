@@ -175,6 +175,12 @@
     }
   </style>
   <script>
+    // if there is title remove the other title
+    if (document.querySelector(".title")) {
+      document.querySelector("h1:not(.title)").style.display = "none"
+    }
+  </script>
+  <script>
   addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll("img")
   images.forEach(img => {

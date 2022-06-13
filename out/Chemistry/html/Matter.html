@@ -176,6 +176,12 @@
     }
   </style>
   <script>
+    // if there is title remove the other title
+    if (document.querySelector(".title")) {
+      document.querySelector("h1:not(.title)").style.display = "none"
+    }
+  </script>
+  <script>
   addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll("img")
   images.forEach(img => {
@@ -211,7 +217,8 @@
 <p class="subtitle"><p> Some Basic Concepts of Chemistry</p></p>
 <p class="author"></p>
 </header>
-<h1 id="matter-atoms-and-molecules">Matter, Atoms and Molecules</h1>
+<h1 id="matter-atoms-and-molecules"><strong>Matter, Atoms and
+Molecules</strong></h1>
 <blockquote>
 <p><strong>Topics:</strong> Matter and its nature; Dalton’s atomic
 theory; Concept of atom, molecule, element, and compound</p>

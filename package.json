@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/dipamsen/MDNotes/issues"
   },
-  "homepage": "https://github.com/dipamsen/MDNotes#readme"
+  "homepage": "https://github.com/dipamsen/MDNotes#readme",
+  "dependencies": {
+    "mhchemparser": "^4.1.1",
+    "pandoc-filter": "^2.0.2"
+  }
 }

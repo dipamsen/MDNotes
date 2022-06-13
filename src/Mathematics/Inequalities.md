@@ -1,3 +1,7 @@
+---
+headertext: 11th Mathematics (JEE)
+...
+
 # **Inequalities**
 
 Inequalities are algebraic statements which use the symbols $<$, $>$, $\le$, $\ge$.

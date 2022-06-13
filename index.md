@@ -26,5 +26,6 @@ Inequalities
 
 ## Chemistry
 
-* **UNIT I: Some Basic Concepts of Chemistry**
-  * **Matter, Atoms and Molecules**: [Webpage](out/Chemistry/html/Matter.html) \| [PDF](out/Chemistry/pdf/Matter.pdf) 
+### **UNIT I: Some Basic Concepts of Chemistry**
+* **Matter, Atoms and Molecules**: [Webpage](out/Chemistry/html/Matter.html) \| [PDF](out/Chemistry/pdf/Matter.pdf) 
+* **Chemical Measurements**: [Webpage](out/Chemistry/html/Measurements.html) \| [PDF](out/Chemistry/pdf/Measurements.pdf)

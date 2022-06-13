@@ -15,6 +15,8 @@ const pdfOpts = [
   "--template",
   "templates/default.latex",
   "--lua-filter",
+  "filters/mhchem.lua",
+  "--lua-filter",
   "filters/center.lua",
   "--lua-filter",
   "filters/imgresolve.lua",

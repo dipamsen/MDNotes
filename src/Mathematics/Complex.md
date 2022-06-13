@@ -1,3 +1,7 @@
+---
+headertext: 11th Mathematics (JEE)
+...
+
 # **Complex Numbers**
 
 In the **real** number system, the solution for $\gdef\Re{\mathrm{Re}\ }\gdef\Im{\mathrm{Im}\ }x^2=-1$ is undefined. This is because of the fact that the square of any real number is always non-negative.
