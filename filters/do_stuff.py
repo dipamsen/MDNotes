@@ -1,7 +1,11 @@
 from pandocfilters import toJSONFilter, Str, Math, RawInline, Para
 import requests
 # from mhchem import mhchem
-import re
+# import re
+
+# with open("filters/log.txt", "w") as f:
+#     f.write("")
+#     f.close()
 
 
 def handlePu(s):
@@ -27,7 +31,7 @@ def caps(key, value, format, meta):
             result = handlePu(value[1])
             log(result)
             if result:
-                return Math({'t': 'DisplayMath'}, result)
+                return Math(value[0], result)
     # if key == "Math":
     #     print(value)
     #     m = re.search('\\\\pu{.*}', value)
@@ -38,7 +42,7 @@ def caps(key, value, format, meta):
 
 
 def log(data):
-    # # write to file
+    # write to file
     # with open("filters/log.txt", "a+") as f:
     #     f.write(data)
     #     f.write("\n")
