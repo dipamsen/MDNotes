@@ -53,17 +53,17 @@ const pdfOpts = [
   console.log(htmlOut);
 
   console.log("");
-  // Convert to PDF
-  await createPDF(inputFile, pdfOut);
-  console.log(pdfOut);
-
-  console.log("");
   if (TESTRUN) {
     console.log("");
     const latexOut = path.join("test", folder + "-" + file + ".tex");
     await createLaTeX(inputFile, latexOut);
     console.log(latexOut);
   }
+
+  console.log("");
+  // Convert to PDF
+  await createPDF(inputFile, pdfOut);
+  console.log(pdfOut);
 })();
 
 function createHTML(input, output) {
