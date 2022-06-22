@@ -456,6 +456,7 @@ $endif$
 \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
 % \let\OldRule\rule
 % \renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+\newcommand{\ud}[2]{\underset{\text{#2}}{\ce{#1}}}
 
 \begin{document}
 $if(has-frontmatter)$

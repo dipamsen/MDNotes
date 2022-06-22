@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="" />
+  <title>Laws of Chemical Combination</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: KaTeX_Main;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 5mm;
+      padding-right: 5mm;
+      padding-top: 20mm;
+      padding-bottom: 20mm;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    blockquote {
+      margin: 1em;
+      padding: 0.5em 20px;
+      border: 5px solid darkgrey;
+      border-radius: 20px;
+      background-color: #eee; 
+      color: inherit;
+    }
+    table {
+      margin: 0 auto;
+      width: initial;
+      display: table;
+    }
+    th, td {
+      border: 1px solid black;
+    }
+  </style>
+  <script>
+  addEventListener("DOMContentLoaded", () => {
+    if (document.querySelector(".title")) {
+      [...document.querySelectorAll("h1")].find(x => !x.classList.contains("title")).style.display = "none"
+    }
+  const images = document.querySelectorAll("img")
+  images.forEach(img => {
+    img.setAttribute("src", '../../..'+img.getAttribute('src'))
+  })})
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mhchem.min.js" crossorigin="anonymous"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Laws of Chemical Combination</h1>
+<p class="subtitle"><p> Some Basic Concepts in Chemistry</p></p>
+<p class="author"></p>
+</header>
+<h1 id="laws-of-chemical-combination"><strong>Laws of Chemical
+Combination</strong></h1>
+<h2 id="law-of-conservation-of-mass-lavoisier">Law of Conservation of
+Mass (Lavoisier)</h2>
+<p><strong>In a chemical reaction, mass is neither created nor
+destroyed. Only rearrangement of atoms takes place.</strong> <span
+class="math display">
+\text{Sum of mass of reactants} =
+\text{Sum of mass of products}
+</span></p>
+<p>Example: When <span class="math inline">\pu{4.2g}</span> <span
+class="math inline">\ce{NaHCO3}</span> is added to a solution of <span
+class="math inline">\ce{CH3COOH}</span> weighing <span
+class="math inline">\pu{10.0g}</span>, it is observed that <span
+class="math inline">\pu{2.2g}</span> <span
+class="math inline">\ce{CO2}</span> is released into atmosphere. The
+residue is found to weight <span class="math inline">\pu{12.0g}</span>.
+<span class="math display">
+\ce{\ud{NaHCO3}{4.2g} + \ud{CH3COOH}{10.0g} -&gt; \ud{CH3COONa +
+H2O}{12g} +\ud{CO2}{2.2g}}
+</span> <span class="math display">\text{Mass of Reactants}=4.2 + 10.0 =
+\pu{14.2g}</span> <span class="math display">\text{Mass of Products}=12
++ 2.2 = \pu{14.2g}</span> Hence, the mass is conserved.</p>
+<blockquote>
+<p>In nuclear reactions, the mass is not conserved. Here, the mass gets
+converted to energy, as explained by Einstein. Therefore, the law is
+more accurately known as the Law of Conservation of Mass and Energy.</p>
+</blockquote>
+<h2 id="law-of-constant-proportions-joseph-proust">Law of Constant
+Proportions (Joseph Proust)</h2>
+<p><strong>For a specific compound, the constituent elements of a
+compound are always in a constant proportion, irrespective of its
+source.</strong></p>
+<p>Example: Water (<span class="math inline">\ce{H2O}</span>) always has
+hydrogen and oxygen present in <span class="math inline">1:8</span> mass
+ratio, whether it is tap water, sea water or distilled water.</p>
+<h2 id="law-of-multiple-proportions-dalton">Law of Multiple Proportions
+(Dalton)</h2>
+<p><strong>If two elements form more than one compound, then the
+different masses of one element, which combine with the fixed mass of
+the other element, bear a simple whole number ratio.</strong></p>
+<p>Example: <span class="math display">\ce{H2O} \rightarrow \mathrm{H} -
+2g ~~ \mathrm{O} - 16g</span> <span
+class="math display">\ce{H2O2}\rightarrow \mathrm{H} - 2g ~~ \mathrm{O}
+- 32g</span> Here, masses of oxygen bears a simple whole number ratio -
+<span class="math inline">16:32=1:2</span></p>
+<blockquote>
+<ul>
+<li>These laws is not applicable in case of compounds formed by
+different isotopes of the same element.</li>
+</ul>
+</blockquote>
+<h2 id="law-of-reciprocal-proportions-richter">Law of Reciprocal
+Proportions (Richter)</h2>
+<p><strong>The ratio of the weights of two elements A and B which
+combine separately with a fixed weight of the third element C is either
+the same or some simple multiple of the ratio of the weights in which A
+and B combine directly with each other.</strong></p>
+<p>Example:</p>
+<p><img src="/images/2022-06-22-23-05-22.png" width="100" /></p>
+<p>The elements C and O combine separately with the third element H to
+form <span class="math inline">\ce{CH4}</span> and <span
+class="math inline">\ce{H2O}</span> and they combine directly with each
+other to form CO2. - In <span class="math inline">\ce{CH4}</span>, 4 H
+combines with 12 C by mass. - In <span
+class="math inline">\ce{H2O}</span>, 2 H combines with 16 O by mass, or
+4 H combines with 32 O by mass. - Thus, a fixed weight of H (4 parts)
+reacts with C and O in the ratio <span
+class="math inline">12:32=3:8</span>.</p>
+<p>Now, in <span class="math inline">\ce{CO2}</span>, 12 C combines with
+32 O. This ratio is same as the one derived above. Hence, the law holds
+true.</p>
+<h2 id="law-of-combining-volumes-gay-lussac">Law of Combining Volumes
+(Gay Lussac)</h2>
+<p><strong>When gases react together, they do so in a simple whole
+number ratio by volume to one another and the products, at
+S.T.P.</strong></p>
+<p>Example:</p>
+<p><img src="/images/2022-06-22-23-18-27.png" /></p>
+<p>It has been found, that 2 volumes of hydrogen react with 1 volume of
+oxygen to produce 2 volumes of water vapour. Thus, the volumes of these
+gases bear a simple whole number ratio of <span
+class="math inline">2:1:2</span>.</p>
+<blockquote>
+<p>It might be somewhat counterintuitive to understand that 2 volumes of
+H and 1 volume of O forms only 2 volumes and not 3 (2+1) volumes. This
+is because of the fact that gases don’t have a fixed volume, and unlike
+mass, volume is not conserved. Therefore, volumes cannot be added and
+subtracted like mass.</p>
+<p>The reason due to which this above reaction takes place in this
+volume ratio will be explained later in this unit.</p>
+</blockquote>
+<h2 id="avogadros-law-avogadro">Avogadro’s Law (Avogadro)</h2>
+<p><strong>Under similar conditions of temperature and pressure, equal
+volumes of all gases contain equal number of molecules.</strong></p>
+<p><span class="math display">\text{V}\propto\text{N}</span></p>
+<p>Example: 1 L of Hydrogen gas, 1 L of Oxygen gas and 1 L of Chlorine
+gas all have the same number of molecules.</p>
+<blockquote>
+<p>We can relate Avogadro’s Law to Gay Lussac’s Law to understand the
+relations between volume and number of molecules. <span
+class="math display">\ce{2H2 + O2 -&gt; 2H2O}</span> Here, 2 molecules
+of hydrogen react with 1 molecule of oxygen and form 2 molecules of
+water.<br />
+This can also be written as 2n molecules of H react with n molecules of
+O to form 2n molecules of <span
+class="math inline">\ce{H2O}</span>.<br />
+From Avogadro’s Law, we can say that 2n molecules refer to 2 volumes of
+the gas, and n molecules refer to 1 volume of the gas. Thus, 2 volumes
+of hydrogen react with 1 volume of oxygen to produce 2 volumes of water
+vapour. This result is in agreement to the Gay Lussac’s Law.</p>
+</blockquote>
+<hr />
+<h2 id="questions">Questions</h2>
+<ol type="1">
+<li><p>If 6.3 g of <span class="math inline">\ce{NaHCO3}</span> are
+added to 15.0 g <span class="math inline">\ce{CH3COOH}</span> solution,
+the residue is found to weigh 18.0 g. What is the mass of <span
+class="math inline">\ce{CO2}</span> released in the reaction?</p>
+<ol type="A">
+<li>4.5 g</li>
+<li>3.3 g</li>
+<li>2.6 g</li>
+<li>2.8 g</li>
+</ol></li>
+<li><p>3 g of a hydrocarbon on combustion in excess of oxygen produces
+8.8 g of <span class="math inline">\ce{CO2}</span> and 5.4 g of <span
+class="math inline">\ce{H2O}</span>. The data illustrates the law of:
+<strong>[JEE 2010]</strong></p>
+<ol type="A">
+<li>conservation of mass</li>
+<li>multiple proportions</li>
+<li>constant proportions</li>
+<li>none of these</li>
+</ol></li>
+<li><p>One of the statements of Dalton’s atomic theory is given
+below.<br />
+“Compounds are formed when atoms of different elements combine in a
+fixed ratio.”<br />
+Which of the following laws is not related to this statement? (Multiple
+Correct Options)</p>
+<ol type="A">
+<li>Law of conservation of mass</li>
+<li>Law of definite proportions</li>
+<li>Law of multiple proportions</li>
+<li>Avogadro’s Law</li>
+</ol></li>
+<li><p>Two aqueous solutions X and Y containing 0.585 g of sodium
+chloride and 1.70 g of silver nitrate respectively were mized. The
+weight of silver chloride formed was found to be 1.432 g and 0.853 g
+<span class="math inline">\ce{NaNO3}</span> was obtained. Show that
+these observations confirm the law of chemical conservation of
+mass.</p></li>
+<li><p>Iron forms two oxides. In the first oxide, 56g Fe reacts with 16g
+<span class="math inline">\ce{O2}</span> and in the second oxide 112g Fe
+reacts with 48g <span class="math inline">\ce{O2}</span>. This data
+satisfies the law of</p>
+<ol type="A">
+<li>Conservation of Mass</li>
+<li>Reciprocal Proportions</li>
+<li>Multiple Proportion</li>
+<li>Combining Volumes</li>
+</ol></li>
+</ol>
+<p>Answers<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a> are given below.</p>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Answers: 1-(B) 2-(A) 3-(A,D) 5-(C)<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
