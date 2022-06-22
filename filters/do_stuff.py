@@ -9,8 +9,9 @@ import requests
 
 
 def handlePu(s):
-    res = requests.get(
-        "https://mhchem-api.vercel.app/parseTex?tex=" + s)
+    body = {"tex": s}
+    res = requests.post(
+        "https://mhchem-api.vercel.app//parseTex", json=body)
     result = res.text
     if not result:
         log("Could not parse mhchem formula " + s + "\n")

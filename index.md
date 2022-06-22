@@ -29,3 +29,4 @@ Inequalities
 ### **UNIT I: Some Basic Concepts of Chemistry**
 * **Matter, Atoms and Molecules**: [Webpage](out/Chemistry/html/Matter.html) \| [PDF](out/Chemistry/pdf/Matter.pdf) 
 * **Chemical Measurements**: [Webpage](out/Chemistry/html/Measurements.html) \| [PDF](out/Chemistry/pdf/Measurements.pdf)
+* **Laws of Chemical Combination**: [Webpage](out/Chemistry/html/LawsCombination.html) \| [PDF](out/Chemistry/pdf/LawsCombination.pdf)
