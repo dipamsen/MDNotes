@@ -454,8 +454,8 @@ $endif$
 \renewcommand{\footrulewidth}{2pt}
 \newtcolorbox{myquote}{colback=gray!25, colframe=gray!75!black}
 \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
-\let\OldRule\rule
-\renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+% \let\OldRule\rule
+% \renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
 
 \begin{document}
 $if(has-frontmatter)$
