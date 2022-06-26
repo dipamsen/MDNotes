@@ -5,7 +5,8 @@
   "main": "scripts/index.js",
   "scripts": {
     "convert": "node scripts",
-    "mc": "node scripts/mass.js"
+    "mc": "node scripts/mass.js src/Chemistry && node scripts/mass.js src/Mathematics",
+    "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",

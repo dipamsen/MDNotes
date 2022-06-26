@@ -2,7 +2,7 @@
 const util = require("util");
 const child_process = require("child_process");
 const path = require("path");
-const { readFileSync } = require("fs");
+const { readFileSync, mkdirSync } = require("fs");
 let TESTRUN = false;
 
 const pdfOpts = [
@@ -45,8 +45,11 @@ const pdfOpts = [
 
   console.log("PROGRAM: Converting", folder, "-", file);
 
-  const pdfOut = path.join("out", folder, "pdf", file + ".pdf");
-  const htmlOut = path.join("out", folder, "html", file + ".html");
+  mkdirSync(path.join("out", "pdf", folder), { recursive: true });
+  mkdirSync(path.join("out", "html", folder), { recursive: true });
+
+  const pdfOut = path.join("out", "pdf", folder, file + ".pdf");
+  const htmlOut = path.join("out", "html", folder, file + ".html");
 
   // Convert to HTML
   await createHTML(inputFile, htmlOut);
