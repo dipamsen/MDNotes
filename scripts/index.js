@@ -39,7 +39,7 @@ const pdfOpts = [
   const file = path.parse(inputFile).name;
   const folder = path
     .parse(inputFile)
-    .dir.split("\\")
+    .dir.split(path.sep)
     .filter((x) => x)
     .pop();
 

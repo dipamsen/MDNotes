@@ -1,9 +1,9 @@
 const child_process = require("child_process");
 const path = require("path");
 const fs = require("fs").promises;
-
+const sep = path.sep;
 (async () => {
-  const dirs = (await fs.readdir("src")).map((fol) => `src\\${fol}`);
+  const dirs = (await fs.readdir("src")).map((fol) => `src${sep}${fol}`);
   console.log(dirs);
   for (const folder of dirs) {
     const files = await fs.readdir(folder);
@@ -12,7 +12,10 @@ const fs = require("fs").promises;
       console.log("==================================");
       console.log("Converting " + chap);
       console.log("==================================");
-      await run_script(`node`, ["scripts/index.js", `${folder}\\${chap}.md`]);
+      await run_script(`node`, [
+        "scripts/index.js",
+        `${folder}${sep}${chap}.md`,
+      ]);
     }
   }
 })();
