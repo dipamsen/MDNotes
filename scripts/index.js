@@ -5,6 +5,8 @@ const path = require("path");
 const { readFileSync, mkdirSync } = require("fs");
 let TESTRUN = false;
 
+const execFile = "./exec/pandoc";
+
 const pdfOpts = [
   "--metadata-file",
   "config/pdf-meta.yaml",
@@ -75,7 +77,7 @@ function createHTML(input, output) {
     //   .toString()
     //   .match(/# (.*)[\*]/);
     run_script(
-      "pandoc",
+      execFile,
       [
         "-o",
         output,
@@ -107,7 +109,7 @@ function createHTML(input, output) {
 function createPDF(input, output) {
   return new Promise((res, rej) => {
     run_script(
-      "pandoc",
+      execFile,
       ["-o", output, input, ...pdfOpts],
       (code) => {
         if (code === 0) {
@@ -127,7 +129,7 @@ function createPDF(input, output) {
 function createLaTeX(input, output) {
   return new Promise((res, rej) => {
     run_script(
-      "pandoc",
+      execFile,
       ["-o", output, input, ...pdfOpts],
       (code) => {
         if (code === 0) {
