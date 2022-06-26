@@ -5,7 +5,7 @@ const path = require("path");
 const { readFileSync, mkdirSync } = require("fs");
 let TESTRUN = false;
 
-const execFile = "./exec/pandoc";
+const execFile = "pandoc";
 
 const pdfOpts = [
   "--metadata-file",
